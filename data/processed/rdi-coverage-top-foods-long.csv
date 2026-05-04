@@ -1,0 +1,901 @@
+Code,Food name in English,rank,topsis_score,nutrient,value_per_100g,rdi,percent_rdi
+04_007,"Carrot, boiled* (without salt), drained",1.0,0.7903982376382545,"Protein, total
+(g)",1.0,50.0,2.0
+04_007,"Carrot, boiled* (without salt), drained",1.0,0.7903982376382545,"Fibre, total dietary or [fibre, crude]
+(g)",3.4,28.0,12.142857142857142
+04_007,"Carrot, boiled* (without salt), drained",1.0,0.7903982376382545,"Calcium
+(mg)",37.0,1300.0,2.8461538461538463
+04_007,"Carrot, boiled* (without salt), drained",1.0,0.7903982376382545,"Iron
+(mg)",65.2,18.0,362.22222222222223
+04_007,"Carrot, boiled* (without salt), drained",1.0,0.7903982376382545,"Magnesium
+(mg)",9.0,420.0,2.142857142857143
+04_007,"Carrot, boiled* (without salt), drained",1.0,0.7903982376382545,"Phosphorus
+(mg)",46.0,1250.0,3.6799999999999997
+04_007,"Carrot, boiled* (without salt), drained",1.0,0.7903982376382545,"Potassium
+(mg)",108.0,4700.0,2.297872340425532
+04_007,"Carrot, boiled* (without salt), drained",1.0,0.7903982376382545,"Zinc
+(mg)",0.2,11.0,1.8181818181818183
+04_007,"Carrot, boiled* (without salt), drained",1.0,0.7903982376382545,"Copper
+(mg)",0.07,0.9,7.777777777777778
+04_007,"Carrot, boiled* (without salt), drained",1.0,0.7903982376382545,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",610.0,900.0,67.77777777777779
+04_007,"Carrot, boiled* (without salt), drained",1.0,0.7903982376382545,"Vitamin C
+(mg)",3.0,90.0,3.3333333333333335
+04_007,"Carrot, boiled* (without salt), drained",1.0,0.7903982376382545,"Vitamin D 
+(mcg)",0.0,20.0,0.0
+04_007,"Carrot, boiled* (without salt), drained",1.0,0.7903982376382545,"Vitamin B12
+(mcg)",0.0,2.4,0.0
+04_007,"Carrot, boiled* (without salt), drained",1.0,0.7903982376382545,"Vitamin B6
+(mg)",0.19,1.7,11.176470588235295
+04_007,"Carrot, boiled* (without salt), drained",1.0,0.7903982376382545,"Thiamine (vitamin B1)
+(mg)",0.03,1.2,2.5
+04_007,"Carrot, boiled* (without salt), drained",1.0,0.7903982376382545,"Riboflavin (vitamin B2)
+(mg)",0.03,1.3,2.3076923076923075
+04_007,"Carrot, boiled* (without salt), drained",1.0,0.7903982376382545,"Niacin, preformed
+(mg)",0.4,16.0,2.5
+04_007,"Carrot, boiled* (without salt), drained",1.0,0.7903982376382545,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",9.0,400.0,2.25
+04_043,"Onion, fresh, boiled* (without salt), drained",2.0,0.780830759710783,"Protein, total
+(g)",1.4,50.0,2.8
+04_043,"Onion, fresh, boiled* (without salt), drained",2.0,0.780830759710783,"Fibre, total dietary or [fibre, crude]
+(g)",2.2,28.0,7.8571428571428585
+04_043,"Onion, fresh, boiled* (without salt), drained",2.0,0.780830759710783,"Calcium
+(mg)",28.0,1300.0,2.1538461538461537
+04_043,"Onion, fresh, boiled* (without salt), drained",2.0,0.780830759710783,"Iron
+(mg)",62.9,18.0,349.44444444444446
+04_043,"Onion, fresh, boiled* (without salt), drained",2.0,0.780830759710783,"Magnesium
+(mg)",9.0,420.0,2.142857142857143
+04_043,"Onion, fresh, boiled* (without salt), drained",2.0,0.780830759710783,"Phosphorus
+(mg)",48.0,1250.0,3.84
+04_043,"Onion, fresh, boiled* (without salt), drained",2.0,0.780830759710783,"Potassium
+(mg)",89.0,4700.0,1.8936170212765957
+04_043,"Onion, fresh, boiled* (without salt), drained",2.0,0.780830759710783,"Zinc
+(mg)",0.26,11.0,2.3636363636363638
+04_043,"Onion, fresh, boiled* (without salt), drained",2.0,0.780830759710783,"Copper
+(mg)",0.16,0.9,17.77777777777778
+04_043,"Onion, fresh, boiled* (without salt), drained",2.0,0.780830759710783,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",0.0,900.0,0.0
+04_043,"Onion, fresh, boiled* (without salt), drained",2.0,0.780830759710783,"Vitamin C
+(mg)",6.0,90.0,6.666666666666667
+04_043,"Onion, fresh, boiled* (without salt), drained",2.0,0.780830759710783,"Vitamin D 
+(mcg)",0.0,20.0,0.0
+04_043,"Onion, fresh, boiled* (without salt), drained",2.0,0.780830759710783,"Vitamin B12
+(mcg)",0.0,2.4,0.0
+04_043,"Onion, fresh, boiled* (without salt), drained",2.0,0.780830759710783,"Vitamin B6
+(mg)",0.06,1.7,3.5294117647058822
+04_043,"Onion, fresh, boiled* (without salt), drained",2.0,0.780830759710783,"Thiamine (vitamin B1)
+(mg)",0.02,1.2,1.6666666666666667
+04_043,"Onion, fresh, boiled* (without salt), drained",2.0,0.780830759710783,"Riboflavin (vitamin B2)
+(mg)",0.04,1.3,3.0769230769230766
+04_043,"Onion, fresh, boiled* (without salt), drained",2.0,0.780830759710783,"Niacin, preformed
+(mg)",0.2,16.0,1.25
+04_043,"Onion, fresh, boiled* (without salt), drained",2.0,0.780830759710783,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",10.0,400.0,2.5
+04_075,"Jute mallow (bush-okra), leaves, dried",3.0,0.613207505315616,"Protein, total
+(g)",22.4,50.0,44.8
+04_075,"Jute mallow (bush-okra), leaves, dried",3.0,0.613207505315616,"Fibre, total dietary or [fibre, crude]
+(g)",34.9,28.0,124.64285714285714
+04_075,"Jute mallow (bush-okra), leaves, dried",3.0,0.613207505315616,"Calcium
+(mg)",1416.0,1300.0,108.92307692307692
+04_075,"Jute mallow (bush-okra), leaves, dried",3.0,0.613207505315616,"Iron
+(mg)",42.6,18.0,236.66666666666666
+04_075,"Jute mallow (bush-okra), leaves, dried",3.0,0.613207505315616,"Magnesium
+(mg)",401.0,420.0,95.47619047619048
+04_075,"Jute mallow (bush-okra), leaves, dried",3.0,0.613207505315616,"Phosphorus
+(mg)",333.0,1250.0,26.640000000000004
+04_075,"Jute mallow (bush-okra), leaves, dried",3.0,0.613207505315616,"Potassium
+(mg)",1390.0,4700.0,29.574468085106382
+04_075,"Jute mallow (bush-okra), leaves, dried",3.0,0.613207505315616,"Zinc
+(mg)",2.89,11.0,26.272727272727277
+04_075,"Jute mallow (bush-okra), leaves, dried",3.0,0.613207505315616,"Copper
+(mg)",1.05,0.9,116.66666666666667
+04_075,"Jute mallow (bush-okra), leaves, dried",3.0,0.613207505315616,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",965.0,900.0,107.22222222222221
+04_075,"Jute mallow (bush-okra), leaves, dried",3.0,0.613207505315616,"Vitamin C
+(mg)",38.0,90.0,42.22222222222222
+04_075,"Jute mallow (bush-okra), leaves, dried",3.0,0.613207505315616,"Vitamin D 
+(mcg)",0.0,20.0,0.0
+04_075,"Jute mallow (bush-okra), leaves, dried",3.0,0.613207505315616,"Vitamin B12
+(mcg)",0.0,2.4,0.0
+04_075,"Jute mallow (bush-okra), leaves, dried",3.0,0.613207505315616,"Vitamin B6
+(mg)",2.8,1.7,164.70588235294116
+04_075,"Jute mallow (bush-okra), leaves, dried",3.0,0.613207505315616,"Thiamine (vitamin B1)
+(mg)",0.16,1.2,13.333333333333334
+04_075,"Jute mallow (bush-okra), leaves, dried",3.0,0.613207505315616,"Riboflavin (vitamin B2)
+(mg)",2.5,1.3,192.3076923076923
+04_075,"Jute mallow (bush-okra), leaves, dried",3.0,0.613207505315616,"Niacin, preformed
+(mg)",4.9,16.0,30.625000000000004
+04_075,"Jute mallow (bush-okra), leaves, dried",3.0,0.613207505315616,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",460.0,400.0,114.99999999999999
+06_039,"Benniseed, dried, raw",4.0,0.6015414379402395,"Protein, total
+(g)",17.4,50.0,34.8
+06_039,"Benniseed, dried, raw",4.0,0.6015414379402395,"Fibre, total dietary or [fibre, crude]
+(g)",13.6,28.0,48.57142857142857
+06_039,"Benniseed, dried, raw",4.0,0.6015414379402395,"Calcium
+(mg)",693.0,1300.0,53.307692307692314
+06_039,"Benniseed, dried, raw",4.0,0.6015414379402395,"Iron
+(mg)",42.3,18.0,234.99999999999997
+06_039,"Benniseed, dried, raw",4.0,0.6015414379402395,"Magnesium
+(mg)",265.0,420.0,63.095238095238095
+06_039,"Benniseed, dried, raw",4.0,0.6015414379402395,"Phosphorus
+(mg)",403.0,1250.0,32.24
+06_039,"Benniseed, dried, raw",4.0,0.6015414379402395,"Potassium
+(mg)",278.0,4700.0,5.914893617021277
+06_039,"Benniseed, dried, raw",4.0,0.6015414379402395,"Zinc
+(mg)",2.72,11.0,24.727272727272727
+06_039,"Benniseed, dried, raw",4.0,0.6015414379402395,"Copper
+(mg)",1.62,0.9,180.0
+06_039,"Benniseed, dried, raw",4.0,0.6015414379402395,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",1.0,900.0,0.1111111111111111
+06_039,"Benniseed, dried, raw",4.0,0.6015414379402395,"Vitamin C
+(mg)",0.0,90.0,0.0
+06_039,"Benniseed, dried, raw",4.0,0.6015414379402395,"Vitamin D 
+(mcg)",0.0,20.0,0.0
+06_039,"Benniseed, dried, raw",4.0,0.6015414379402395,"Vitamin B12
+(mcg)",0.0,2.4,0.0
+06_039,"Benniseed, dried, raw",4.0,0.6015414379402395,"Vitamin B6
+(mg)",0.79,1.7,46.470588235294116
+06_039,"Benniseed, dried, raw",4.0,0.6015414379402395,"Thiamine (vitamin B1)
+(mg)",0.68,1.2,56.66666666666668
+06_039,"Benniseed, dried, raw",4.0,0.6015414379402395,"Riboflavin (vitamin B2)
+(mg)",0.19,1.3,14.615384615384617
+06_039,"Benniseed, dried, raw",4.0,0.6015414379402395,"Niacin, preformed
+(mg)",3.4,16.0,21.25
+06_039,"Benniseed, dried, raw",4.0,0.6015414379402395,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",100.0,400.0,25.0
+04_031,"Cowpea, leaves, dried",5.0,0.5134928781666108,"Protein, total
+(g)",24.4,50.0,48.8
+04_031,"Cowpea, leaves, dried",5.0,0.5134928781666108,"Fibre, total dietary or [fibre, crude]
+(g)",34.1,28.0,121.78571428571429
+04_031,"Cowpea, leaves, dried",5.0,0.5134928781666108,"Calcium
+(mg)",1059.0,1300.0,81.46153846153847
+04_031,"Cowpea, leaves, dried",5.0,0.5134928781666108,"Iron
+(mg)",35.0,18.0,194.44444444444443
+04_031,"Cowpea, leaves, dried",5.0,0.5134928781666108,"Magnesium
+(mg)",380.0,420.0,90.47619047619048
+04_031,"Cowpea, leaves, dried",5.0,0.5134928781666108,"Phosphorus
+(mg)",364.0,1250.0,29.12
+04_031,"Cowpea, leaves, dried",5.0,0.5134928781666108,"Potassium
+(mg)",3300.0,4700.0,70.2127659574468
+04_031,"Cowpea, leaves, dried",5.0,0.5134928781666108,"Zinc
+(mg)",3.91,11.0,35.54545454545455
+04_031,"Cowpea, leaves, dried",5.0,0.5134928781666108,"Copper
+(mg)",1.88,0.9,208.88888888888886
+04_031,"Cowpea, leaves, dried",5.0,0.5134928781666108,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",300.0,900.0,33.33333333333333
+04_031,"Cowpea, leaves, dried",5.0,0.5134928781666108,"Vitamin C
+(mg)",40.0,90.0,44.44444444444444
+04_031,"Cowpea, leaves, dried",5.0,0.5134928781666108,"Vitamin D 
+(mcg)",0.0,20.0,0.0
+04_031,"Cowpea, leaves, dried",5.0,0.5134928781666108,"Vitamin B12
+(mcg)",0.0,2.4,0.0
+04_031,"Cowpea, leaves, dried",5.0,0.5134928781666108,"Vitamin B6
+(mg)",1.6,1.7,94.11764705882354
+04_031,"Cowpea, leaves, dried",5.0,0.5134928781666108,"Thiamine (vitamin B1)
+(mg)",1.0,1.2,83.33333333333334
+04_031,"Cowpea, leaves, dried",5.0,0.5134928781666108,"Riboflavin (vitamin B2)
+(mg)",2.4,1.3,184.6153846153846
+04_031,"Cowpea, leaves, dried",5.0,0.5134928781666108,"Niacin, preformed
+(mg)",14.0,16.0,87.5
+04_031,"Cowpea, leaves, dried",5.0,0.5134928781666108,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",640.0,400.0,160.0
+01_001,"Fonio, white, whole grains, raw",6.0,0.4292255865033207,"Protein, total
+(g)",7.1,50.0,14.2
+01_001,"Fonio, white, whole grains, raw",6.0,0.4292255865033207,"Fibre, total dietary or [fibre, crude]
+(g)",16.4,28.0,58.57142857142856
+01_001,"Fonio, white, whole grains, raw",6.0,0.4292255865033207,"Calcium
+(mg)",40.0,1300.0,3.076923076923077
+01_001,"Fonio, white, whole grains, raw",6.0,0.4292255865033207,"Iron
+(mg)",29.4,18.0,163.33333333333334
+01_001,"Fonio, white, whole grains, raw",6.0,0.4292255865033207,"Magnesium
+(mg)",430.0,420.0,102.38095238095238
+01_001,"Fonio, white, whole grains, raw",6.0,0.4292255865033207,"Phosphorus
+(mg)",191.0,1250.0,15.28
+01_001,"Fonio, white, whole grains, raw",6.0,0.4292255865033207,"Potassium
+(mg)",340.0,4700.0,7.234042553191489
+01_001,"Fonio, white, whole grains, raw",6.0,0.4292255865033207,"Zinc
+(mg)",2.79,11.0,25.363636363636367
+01_001,"Fonio, white, whole grains, raw",6.0,0.4292255865033207,"Copper
+(mg)",0.44,0.9,48.888888888888886
+01_001,"Fonio, white, whole grains, raw",6.0,0.4292255865033207,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",0.0,900.0,0.0
+01_001,"Fonio, white, whole grains, raw",6.0,0.4292255865033207,"Vitamin C
+(mg)",0.0,90.0,0.0
+01_001,"Fonio, white, whole grains, raw",6.0,0.4292255865033207,"Vitamin D 
+(mcg)",0.0,20.0,0.0
+01_001,"Fonio, white, whole grains, raw",6.0,0.4292255865033207,"Vitamin B12
+(mcg)",0.0,2.4,0.0
+01_001,"Fonio, white, whole grains, raw",6.0,0.4292255865033207,"Vitamin B6
+(mg)",0.16,1.7,9.411764705882353
+01_001,"Fonio, white, whole grains, raw",6.0,0.4292255865033207,"Thiamine (vitamin B1)
+(mg)",0.26,1.2,21.666666666666668
+01_001,"Fonio, white, whole grains, raw",6.0,0.4292255865033207,"Riboflavin (vitamin B2)
+(mg)",0.1,1.3,7.6923076923076925
+01_001,"Fonio, white, whole grains, raw",6.0,0.4292255865033207,"Niacin, preformed
+(mg)",1.6,16.0,10.0
+01_001,"Fonio, white, whole grains, raw",6.0,0.4292255865033207,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",120.0,400.0,30.0
+09_057,"Shrimp (crayfish), whole, dried",7.0,0.3843731975342682,"Protein, total
+(g)",63.1,50.0,126.2
+09_057,"Shrimp (crayfish), whole, dried",7.0,0.3843731975342682,"Fibre, total dietary or [fibre, crude]
+(g)",0.0,28.0,0.0
+09_057,"Shrimp (crayfish), whole, dried",7.0,0.3843731975342682,"Calcium
+(mg)",2522.0,1300.0,194.0
+09_057,"Shrimp (crayfish), whole, dried",7.0,0.3843731975342682,"Iron
+(mg)",25.3,18.0,140.55555555555557
+09_057,"Shrimp (crayfish), whole, dried",7.0,0.3843731975342682,"Magnesium
+(mg)",670.0,420.0,159.52380952380955
+09_057,"Shrimp (crayfish), whole, dried",7.0,0.3843731975342682,"Phosphorus
+(mg)",1332.0,1250.0,106.56000000000002
+09_057,"Shrimp (crayfish), whole, dried",7.0,0.3843731975342682,"Potassium
+(mg)",1107.0,4700.0,23.5531914893617
+09_057,"Shrimp (crayfish), whole, dried",7.0,0.3843731975342682,"Zinc
+(mg)",6.83,11.0,62.09090909090909
+09_057,"Shrimp (crayfish), whole, dried",7.0,0.3843731975342682,"Copper
+(mg)",2.0,0.9,222.22222222222223
+09_057,"Shrimp (crayfish), whole, dried",7.0,0.3843731975342682,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",9.0,900.0,1.0
+09_057,"Shrimp (crayfish), whole, dried",7.0,0.3843731975342682,"Vitamin C
+(mg)",37.0,90.0,41.11111111111111
+09_057,"Shrimp (crayfish), whole, dried",7.0,0.3843731975342682,"Vitamin D 
+(mcg)",0.0,20.0,0.0
+09_057,"Shrimp (crayfish), whole, dried",7.0,0.3843731975342682,"Vitamin B12
+(mcg)",5.9,2.4,245.83333333333334
+09_057,"Shrimp (crayfish), whole, dried",7.0,0.3843731975342682,"Vitamin B6
+(mg)",0.7,1.7,41.17647058823529
+09_057,"Shrimp (crayfish), whole, dried",7.0,0.3843731975342682,"Thiamine (vitamin B1)
+(mg)",0.03,1.2,2.5
+09_057,"Shrimp (crayfish), whole, dried",7.0,0.3843731975342682,"Riboflavin (vitamin B2)
+(mg)",0.22,1.3,16.92307692307692
+09_057,"Shrimp (crayfish), whole, dried",7.0,0.3843731975342682,"Niacin, preformed
+(mg)",2.3,16.0,14.374999999999998
+09_057,"Shrimp (crayfish), whole, dried",7.0,0.3843731975342682,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",140.0,400.0,35.0
+04_069,"Turnip, boiled* (without salt), drained",8.0,0.3081468167358141,"Protein, total
+(g)",1.1,50.0,2.2
+04_069,"Turnip, boiled* (without salt), drained",8.0,0.3081468167358141,"Fibre, total dietary or [fibre, crude]
+(g)",2.8,28.0,10.0
+04_069,"Turnip, boiled* (without salt), drained",8.0,0.3081468167358141,"Calcium
+(mg)",43.0,1300.0,3.307692307692308
+04_069,"Turnip, boiled* (without salt), drained",8.0,0.3081468167358141,"Iron
+(mg)",20.8,18.0,115.55555555555557
+04_069,"Turnip, boiled* (without salt), drained",8.0,0.3081468167358141,"Magnesium
+(mg)",10.0,420.0,2.380952380952381
+04_069,"Turnip, boiled* (without salt), drained",8.0,0.3081468167358141,"Phosphorus
+(mg)",35.0,1250.0,2.8000000000000003
+04_069,"Turnip, boiled* (without salt), drained",8.0,0.3081468167358141,"Potassium
+(mg)",131.0,4700.0,2.7872340425531914
+04_069,"Turnip, boiled* (without salt), drained",8.0,0.3081468167358141,"Zinc
+(mg)",0.18,11.0,1.6363636363636362
+04_069,"Turnip, boiled* (without salt), drained",8.0,0.3081468167358141,"Copper
+(mg)",0.1,0.9,11.111111111111112
+04_069,"Turnip, boiled* (without salt), drained",8.0,0.3081468167358141,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",4.0,900.0,0.4444444444444444
+04_069,"Turnip, boiled* (without salt), drained",8.0,0.3081468167358141,"Vitamin C
+(mg)",11.0,90.0,12.222222222222221
+04_069,"Turnip, boiled* (without salt), drained",8.0,0.3081468167358141,"Vitamin D 
+(mcg)",0.0,20.0,0.0
+04_069,"Turnip, boiled* (without salt), drained",8.0,0.3081468167358141,"Vitamin B12
+(mcg)",0.0,2.4,0.0
+04_069,"Turnip, boiled* (without salt), drained",8.0,0.3081468167358141,"Vitamin B6
+(mg)",0.06,1.7,3.5294117647058822
+04_069,"Turnip, boiled* (without salt), drained",8.0,0.3081468167358141,"Thiamine (vitamin B1)
+(mg)",0.03,1.2,2.5
+04_069,"Turnip, boiled* (without salt), drained",8.0,0.3081468167358141,"Riboflavin (vitamin B2)
+(mg)",0.03,1.3,2.3076923076923075
+04_069,"Turnip, boiled* (without salt), drained",8.0,0.3081468167358141,"Niacin, preformed
+(mg)",0.4,16.0,2.5
+04_069,"Turnip, boiled* (without salt), drained",8.0,0.3081468167358141,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",13.0,400.0,3.25
+07_018,"Beef liver, boiled* (without salt), drained",9.0,0.281408355150101,"Protein, total
+(g)",29.2,50.0,58.4
+07_018,"Beef liver, boiled* (without salt), drained",9.0,0.281408355150101,"Fibre, total dietary or [fibre, crude]
+(g)",0.0,28.0,0.0
+07_018,"Beef liver, boiled* (without salt), drained",9.0,0.281408355150101,"Calcium
+(mg)",40.0,1300.0,3.076923076923077
+07_018,"Beef liver, boiled* (without salt), drained",9.0,0.281408355150101,"Iron
+(mg)",14.1,18.0,78.33333333333333
+07_018,"Beef liver, boiled* (without salt), drained",9.0,0.281408355150101,"Magnesium
+(mg)",20.0,420.0,4.761904761904762
+07_018,"Beef liver, boiled* (without salt), drained",9.0,0.281408355150101,"Phosphorus
+(mg)",385.0,1250.0,30.8
+07_018,"Beef liver, boiled* (without salt), drained",9.0,0.281408355150101,"Potassium
+(mg)",145.0,4700.0,3.0851063829787235
+07_018,"Beef liver, boiled* (without salt), drained",9.0,0.281408355150101,"Zinc
+(mg)",4.59,11.0,41.72727272727273
+07_018,"Beef liver, boiled* (without salt), drained",9.0,0.281408355150101,"Copper
+(mg)",4.05,0.9,450.0
+07_018,"Beef liver, boiled* (without salt), drained",9.0,0.281408355150101,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",23600.0,900.0,2622.222222222222
+07_018,"Beef liver, boiled* (without salt), drained",9.0,0.281408355150101,"Vitamin C
+(mg)",23.0,90.0,25.555555555555554
+07_018,"Beef liver, boiled* (without salt), drained",9.0,0.281408355150101,"Vitamin D 
+(mcg)",1.5,20.0,7.5
+07_018,"Beef liver, boiled* (without salt), drained",9.0,0.281408355150101,"Vitamin B12
+(mcg)",110.0,2.4,4583.333333333334
+07_018,"Beef liver, boiled* (without salt), drained",9.0,0.281408355150101,"Vitamin B6
+(mg)",1.1,1.7,64.70588235294117
+07_018,"Beef liver, boiled* (without salt), drained",9.0,0.281408355150101,"Thiamine (vitamin B1)
+(mg)",0.24,1.2,20.0
+07_018,"Beef liver, boiled* (without salt), drained",9.0,0.281408355150101,"Riboflavin (vitamin B2)
+(mg)",2.0,1.3,153.84615384615384
+07_018,"Beef liver, boiled* (without salt), drained",9.0,0.281408355150101,"Niacin, preformed
+(mg)",11.0,16.0,68.75
+07_018,"Beef liver, boiled* (without salt), drained",9.0,0.281408355150101,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",260.0,400.0,65.0
+04_055,"Pumpkin, leaves, dried",10.0,0.2704457953255574,"Protein, total
+(g)",38.3,50.0,76.6
+04_055,"Pumpkin, leaves, dried",10.0,0.2704457953255574,"Fibre, total dietary or [fibre, crude]
+(g)",17.7,28.0,63.21428571428571
+04_055,"Pumpkin, leaves, dried",10.0,0.2704457953255574,"Calcium
+(mg)",1222.0,1300.0,94.0
+04_055,"Pumpkin, leaves, dried",10.0,0.2704457953255574,"Iron
+(mg)",17.3,18.0,96.11111111111111
+04_055,"Pumpkin, leaves, dried",10.0,0.2704457953255574,"Magnesium
+(mg)",1118.0,420.0,266.1904761904762
+04_055,"Pumpkin, leaves, dried",10.0,0.2704457953255574,"Phosphorus
+(mg)",1023.0,1250.0,81.84
+04_055,"Pumpkin, leaves, dried",10.0,0.2704457953255574,"Potassium
+(mg)",3940.0,4700.0,83.82978723404256
+04_055,"Pumpkin, leaves, dried",10.0,0.2704457953255574,"Zinc
+(mg)",7.08,11.0,64.36363636363637
+04_055,"Pumpkin, leaves, dried",10.0,0.2704457953255574,"Copper
+(mg)",1.02,0.9,113.33333333333333
+04_055,"Pumpkin, leaves, dried",10.0,0.2704457953255574,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",177.0,900.0,19.666666666666664
+04_055,"Pumpkin, leaves, dried",10.0,0.2704457953255574,"Vitamin C
+(mg)",9.0,90.0,10.0
+04_055,"Pumpkin, leaves, dried",10.0,0.2704457953255574,"Vitamin D 
+(mcg)",0.0,20.0,0.0
+04_055,"Pumpkin, leaves, dried",10.0,0.2704457953255574,"Vitamin B12
+(mcg)",0.0,2.4,0.0
+04_055,"Pumpkin, leaves, dried",10.0,0.2704457953255574,"Vitamin B6
+(mg)",1.2,1.7,70.58823529411765
+04_055,"Pumpkin, leaves, dried",10.0,0.2704457953255574,"Thiamine (vitamin B1)
+(mg)",0.54,1.2,45.00000000000001
+04_055,"Pumpkin, leaves, dried",10.0,0.2704457953255574,"Riboflavin (vitamin B2)
+(mg)",0.6,1.3,46.15384615384615
+04_055,"Pumpkin, leaves, dried",10.0,0.2704457953255574,"Niacin, preformed
+(mg)",6.6,16.0,41.25
+04_055,"Pumpkin, leaves, dried",10.0,0.2704457953255574,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",220.0,400.0,55.00000000000001
+07_089,"Beef liver, stewed* (as part of a recipe)",11.0,0.2698433473166242,"Protein, total
+(g)",25.7,50.0,51.4
+07_089,"Beef liver, stewed* (as part of a recipe)",11.0,0.2698433473166242,"Fibre, total dietary or [fibre, crude]
+(g)",0.0,28.0,0.0
+07_089,"Beef liver, stewed* (as part of a recipe)",11.0,0.2698433473166242,"Calcium
+(mg)",44.0,1300.0,3.3846153846153846
+07_089,"Beef liver, stewed* (as part of a recipe)",11.0,0.2698433473166242,"Iron
+(mg)",13.1,18.0,72.77777777777777
+07_089,"Beef liver, stewed* (as part of a recipe)",11.0,0.2698433473166242,"Magnesium
+(mg)",22.0,420.0,5.238095238095238
+07_089,"Beef liver, stewed* (as part of a recipe)",11.0,0.2698433473166242,"Phosphorus
+(mg)",484.0,1250.0,38.72
+07_089,"Beef liver, stewed* (as part of a recipe)",11.0,0.2698433473166242,"Potassium
+(mg)",212.0,4700.0,4.51063829787234
+07_089,"Beef liver, stewed* (as part of a recipe)",11.0,0.2698433473166242,"Zinc
+(mg)",4.75,11.0,43.18181818181818
+07_089,"Beef liver, stewed* (as part of a recipe)",11.0,0.2698433473166242,"Copper
+(mg)",4.45,0.9,494.44444444444446
+07_089,"Beef liver, stewed* (as part of a recipe)",11.0,0.2698433473166242,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",23400.0,900.0,2600.0
+07_089,"Beef liver, stewed* (as part of a recipe)",11.0,0.2698433473166242,"Vitamin C
+(mg)",24.0,90.0,26.666666666666668
+07_089,"Beef liver, stewed* (as part of a recipe)",11.0,0.2698433473166242,"Vitamin D 
+(mcg)",1.4,20.0,6.999999999999999
+07_089,"Beef liver, stewed* (as part of a recipe)",11.0,0.2698433473166242,"Vitamin B12
+(mcg)",130.0,2.4,5416.666666666667
+07_089,"Beef liver, stewed* (as part of a recipe)",11.0,0.2698433473166242,"Vitamin B6
+(mg)",1.1,1.7,64.70588235294117
+07_089,"Beef liver, stewed* (as part of a recipe)",11.0,0.2698433473166242,"Thiamine (vitamin B1)
+(mg)",0.28,1.2,23.333333333333336
+07_089,"Beef liver, stewed* (as part of a recipe)",11.0,0.2698433473166242,"Riboflavin (vitamin B2)
+(mg)",2.0,1.3,153.84615384615384
+07_089,"Beef liver, stewed* (as part of a recipe)",11.0,0.2698433473166242,"Niacin, preformed
+(mg)",17.0,16.0,106.25
+07_089,"Beef liver, stewed* (as part of a recipe)",11.0,0.2698433473166242,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",250.0,400.0,62.5
+07_054,"Lamb liver, boiled* (without salt), drained",12.0,0.264291952564937,"Protein, total
+(g)",29.5,50.0,59.0
+07_054,"Lamb liver, boiled* (without salt), drained",12.0,0.264291952564937,"Fibre, total dietary or [fibre, crude]
+(g)",0.0,28.0,0.0
+07_054,"Lamb liver, boiled* (without salt), drained",12.0,0.264291952564937,"Calcium
+(mg)",9.0,1300.0,0.6923076923076923
+07_054,"Lamb liver, boiled* (without salt), drained",12.0,0.264291952564937,"Iron
+(mg)",14.6,18.0,81.11111111111111
+07_054,"Lamb liver, boiled* (without salt), drained",12.0,0.264291952564937,"Magnesium
+(mg)",29.0,420.0,6.904761904761905
+07_054,"Lamb liver, boiled* (without salt), drained",12.0,0.264291952564937,"Phosphorus
+(mg)",322.0,1250.0,25.759999999999998
+07_054,"Lamb liver, boiled* (without salt), drained",12.0,0.264291952564937,"Potassium
+(mg)",293.0,4700.0,6.23404255319149
+07_054,"Lamb liver, boiled* (without salt), drained",12.0,0.264291952564937,"Zinc
+(mg)",4.53,11.0,41.18181818181819
+07_054,"Lamb liver, boiled* (without salt), drained",12.0,0.264291952564937,"Copper
+(mg)",17.0,0.9,1888.888888888889
+07_054,"Lamb liver, boiled* (without salt), drained",12.0,0.264291952564937,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",17100.0,900.0,1900.0
+07_054,"Lamb liver, boiled* (without salt), drained",12.0,0.264291952564937,"Vitamin C
+(mg)",21.0,90.0,23.333333333333332
+07_054,"Lamb liver, boiled* (without salt), drained",12.0,0.264291952564937,"Vitamin D 
+(mcg)",0.4,20.0,2.0
+07_054,"Lamb liver, boiled* (without salt), drained",12.0,0.264291952564937,"Vitamin B12
+(mcg)",89.0,2.4,3708.3333333333335
+07_054,"Lamb liver, boiled* (without salt), drained",12.0,0.264291952564937,"Vitamin B6
+(mg)",0.32,1.7,18.823529411764707
+07_054,"Lamb liver, boiled* (without salt), drained",12.0,0.264291952564937,"Thiamine (vitamin B1)
+(mg)",0.32,1.2,26.666666666666668
+07_054,"Lamb liver, boiled* (without salt), drained",12.0,0.264291952564937,"Riboflavin (vitamin B2)
+(mg)",3.3,1.3,253.84615384615384
+07_054,"Lamb liver, boiled* (without salt), drained",12.0,0.264291952564937,"Niacin, preformed
+(mg)",12.0,16.0,75.0
+07_054,"Lamb liver, boiled* (without salt), drained",12.0,0.264291952564937,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",200.0,400.0,50.0
+07_132,"Lamb liver, stewed* (as part of a recipe)",13.0,0.25001221516744,"Protein, total
+(g)",26.0,50.0,52.0
+07_132,"Lamb liver, stewed* (as part of a recipe)",13.0,0.25001221516744,"Fibre, total dietary or [fibre, crude]
+(g)",0.0,28.0,0.0
+07_132,"Lamb liver, stewed* (as part of a recipe)",13.0,0.25001221516744,"Calcium
+(mg)",10.0,1300.0,0.7692307692307693
+07_132,"Lamb liver, stewed* (as part of a recipe)",13.0,0.25001221516744,"Iron
+(mg)",13.5,18.0,75.0
+07_132,"Lamb liver, stewed* (as part of a recipe)",13.0,0.25001221516744,"Magnesium
+(mg)",32.0,420.0,7.6190476190476195
+07_132,"Lamb liver, stewed* (as part of a recipe)",13.0,0.25001221516744,"Phosphorus
+(mg)",405.0,1250.0,32.4
+07_132,"Lamb liver, stewed* (as part of a recipe)",13.0,0.25001221516744,"Potassium
+(mg)",429.0,4700.0,9.127659574468085
+07_132,"Lamb liver, stewed* (as part of a recipe)",13.0,0.25001221516744,"Zinc
+(mg)",4.69,11.0,42.63636363636364
+07_132,"Lamb liver, stewed* (as part of a recipe)",13.0,0.25001221516744,"Copper
+(mg)",18.7,0.9,2077.7777777777774
+07_132,"Lamb liver, stewed* (as part of a recipe)",13.0,0.25001221516744,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",16900.0,900.0,1877.7777777777778
+07_132,"Lamb liver, stewed* (as part of a recipe)",13.0,0.25001221516744,"Vitamin C
+(mg)",21.0,90.0,23.333333333333332
+07_132,"Lamb liver, stewed* (as part of a recipe)",13.0,0.25001221516744,"Vitamin D 
+(mcg)",0.4,20.0,2.0
+07_132,"Lamb liver, stewed* (as part of a recipe)",13.0,0.25001221516744,"Vitamin B12
+(mcg)",100.0,2.4,4166.666666666667
+07_132,"Lamb liver, stewed* (as part of a recipe)",13.0,0.25001221516744,"Vitamin B6
+(mg)",0.29,1.7,17.058823529411764
+07_132,"Lamb liver, stewed* (as part of a recipe)",13.0,0.25001221516744,"Thiamine (vitamin B1)
+(mg)",0.36,1.2,30.0
+07_132,"Lamb liver, stewed* (as part of a recipe)",13.0,0.25001221516744,"Riboflavin (vitamin B2)
+(mg)",3.3,1.3,253.84615384615384
+07_132,"Lamb liver, stewed* (as part of a recipe)",13.0,0.25001221516744,"Niacin, preformed
+(mg)",19.0,16.0,118.75
+07_132,"Lamb liver, stewed* (as part of a recipe)",13.0,0.25001221516744,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",190.0,400.0,47.5
+04_071,"Sicklepod, leaves, dried",14.0,0.2470341895218957,"Protein, total
+(g)",21.4,50.0,42.8
+04_071,"Sicklepod, leaves, dried",14.0,0.2470341895218957,"Fibre, total dietary or [fibre, crude]
+(g)",20.9,28.0,74.64285714285714
+04_071,"Sicklepod, leaves, dried",14.0,0.2470341895218957,"Calcium
+(mg)",388.0,1300.0,29.846153846153843
+04_071,"Sicklepod, leaves, dried",14.0,0.2470341895218957,"Iron
+(mg)",16.1,18.0,89.44444444444444
+04_071,"Sicklepod, leaves, dried",14.0,0.2470341895218957,"Magnesium
+(mg)",112.0,420.0,26.666666666666668
+04_071,"Sicklepod, leaves, dried",14.0,0.2470341895218957,"Phosphorus
+(mg)",359.0,1250.0,28.720000000000002
+04_071,"Sicklepod, leaves, dried",14.0,0.2470341895218957,"Potassium
+(mg)",2790.0,4700.0,59.361702127659576
+04_071,"Sicklepod, leaves, dried",14.0,0.2470341895218957,"Zinc
+(mg)",2.14,11.0,19.454545454545453
+04_071,"Sicklepod, leaves, dried",14.0,0.2470341895218957,"Copper
+(mg)",0.36,0.9,40.0
+04_071,"Sicklepod, leaves, dried",14.0,0.2470341895218957,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",249.0,900.0,27.666666666666668
+04_071,"Sicklepod, leaves, dried",14.0,0.2470341895218957,"Vitamin C
+(mg)",15.0,90.0,16.666666666666664
+04_071,"Sicklepod, leaves, dried",14.0,0.2470341895218957,"Vitamin D 
+(mcg)",0.0,20.0,0.0
+04_071,"Sicklepod, leaves, dried",14.0,0.2470341895218957,"Vitamin B12
+(mcg)",0.0,2.4,0.0
+04_071,"Sicklepod, leaves, dried",14.0,0.2470341895218957,"Vitamin B6
+(mg)",1.5,1.7,88.23529411764706
+04_071,"Sicklepod, leaves, dried",14.0,0.2470341895218957,"Thiamine (vitamin B1)
+(mg)",0.17,1.2,14.16666666666667
+04_071,"Sicklepod, leaves, dried",14.0,0.2470341895218957,"Riboflavin (vitamin B2)
+(mg)",0.3,1.3,23.076923076923077
+04_071,"Sicklepod, leaves, dried",14.0,0.2470341895218957,"Niacin, preformed
+(mg)",4.6,16.0,28.749999999999996
+04_071,"Sicklepod, leaves, dried",14.0,0.2470341895218957,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",300.0,400.0,75.0
+07_088,"Beef liver, grilled* (without salt or fat)",15.0,0.2452916689323232,"Protein, total
+(g)",23.8,50.0,47.6
+07_088,"Beef liver, grilled* (without salt or fat)",15.0,0.2452916689323232,"Fibre, total dietary or [fibre, crude]
+(g)",0.0,28.0,0.0
+07_088,"Beef liver, grilled* (without salt or fat)",15.0,0.2452916689323232,"Calcium
+(mg)",41.0,1300.0,3.1538461538461537
+07_088,"Beef liver, grilled* (without salt or fat)",15.0,0.2452916689323232,"Iron
+(mg)",11.5,18.0,63.888888888888886
+07_088,"Beef liver, grilled* (without salt or fat)",15.0,0.2452916689323232,"Magnesium
+(mg)",17.0,420.0,4.0476190476190474
+07_088,"Beef liver, grilled* (without salt or fat)",15.0,0.2452916689323232,"Phosphorus
+(mg)",358.0,1250.0,28.64
+07_088,"Beef liver, grilled* (without salt or fat)",15.0,0.2452916689323232,"Potassium
+(mg)",147.0,4700.0,3.127659574468085
+07_088,"Beef liver, grilled* (without salt or fat)",15.0,0.2452916689323232,"Zinc
+(mg)",3.74,11.0,34.0
+07_088,"Beef liver, grilled* (without salt or fat)",15.0,0.2452916689323232,"Copper
+(mg)",3.3,0.9,366.66666666666663
+07_088,"Beef liver, grilled* (without salt or fat)",15.0,0.2452916689323232,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",21700.0,900.0,2411.111111111111
+07_088,"Beef liver, grilled* (without salt or fat)",15.0,0.2452916689323232,"Vitamin C
+(mg)",20.0,90.0,22.22222222222222
+07_088,"Beef liver, grilled* (without salt or fat)",15.0,0.2452916689323232,"Vitamin D 
+(mcg)",1.3,20.0,6.5
+07_088,"Beef liver, grilled* (without salt or fat)",15.0,0.2452916689323232,"Vitamin B12
+(mcg)",100.0,2.4,4166.666666666667
+07_088,"Beef liver, grilled* (without salt or fat)",15.0,0.2452916689323232,"Vitamin B6
+(mg)",0.93,1.7,54.70588235294118
+07_088,"Beef liver, grilled* (without salt or fat)",15.0,0.2452916689323232,"Thiamine (vitamin B1)
+(mg)",0.24,1.2,20.0
+07_088,"Beef liver, grilled* (without salt or fat)",15.0,0.2452916689323232,"Riboflavin (vitamin B2)
+(mg)",1.8,1.3,138.46153846153845
+07_088,"Beef liver, grilled* (without salt or fat)",15.0,0.2452916689323232,"Niacin, preformed
+(mg)",15.0,16.0,93.75
+07_088,"Beef liver, grilled* (without salt or fat)",15.0,0.2452916689323232,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",280.0,400.0,70.0
+07_108,"Chicken liver, boiled* (without salt), drained",16.0,0.2381947082743278,"Protein, total
+(g)",27.7,50.0,55.39999999999999
+07_108,"Chicken liver, boiled* (without salt), drained",16.0,0.2381947082743278,"Fibre, total dietary or [fibre, crude]
+(g)",0.0,28.0,0.0
+07_108,"Chicken liver, boiled* (without salt), drained",16.0,0.2381947082743278,"Calcium
+(mg)",7.0,1300.0,0.5384615384615384
+07_108,"Chicken liver, boiled* (without salt), drained",16.0,0.2381947082743278,"Iron
+(mg)",13.6,18.0,75.55555555555556
+07_108,"Chicken liver, boiled* (without salt), drained",16.0,0.2381947082743278,"Magnesium
+(mg)",22.0,420.0,5.238095238095238
+07_108,"Chicken liver, boiled* (without salt), drained",16.0,0.2381947082743278,"Phosphorus
+(mg)",297.0,1250.0,23.76
+07_108,"Chicken liver, boiled* (without salt), drained",16.0,0.2381947082743278,"Potassium
+(mg)",218.0,4700.0,4.638297872340426
+07_108,"Chicken liver, boiled* (without salt), drained",16.0,0.2381947082743278,"Zinc
+(mg)",4.06,11.0,36.90909090909091
+07_108,"Chicken liver, boiled* (without salt), drained",16.0,0.2381947082743278,"Copper
+(mg)",0.52,0.9,57.777777777777786
+07_108,"Chicken liver, boiled* (without salt), drained",16.0,0.2381947082743278,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",8510.0,900.0,945.5555555555555
+07_108,"Chicken liver, boiled* (without salt), drained",16.0,0.2381947082743278,"Vitamin C
+(mg)",23.0,90.0,25.555555555555554
+07_108,"Chicken liver, boiled* (without salt), drained",16.0,0.2381947082743278,"Vitamin D 
+(mcg)",1.8,20.0,9.0
+07_108,"Chicken liver, boiled* (without salt), drained",16.0,0.2381947082743278,"Vitamin B12
+(mcg)",22.0,2.4,916.6666666666667
+07_108,"Chicken liver, boiled* (without salt), drained",16.0,0.2381947082743278,"Vitamin B6
+(mg)",1.1,1.7,64.70588235294117
+07_108,"Chicken liver, boiled* (without salt), drained",16.0,0.2381947082743278,"Thiamine (vitamin B1)
+(mg)",0.36,1.2,30.0
+07_108,"Chicken liver, boiled* (without salt), drained",16.0,0.2381947082743278,"Riboflavin (vitamin B2)
+(mg)",2.0,1.3,153.84615384615384
+07_108,"Chicken liver, boiled* (without salt), drained",16.0,0.2381947082743278,"Niacin, preformed
+(mg)",6.5,16.0,40.625
+07_108,"Chicken liver, boiled* (without salt), drained",16.0,0.2381947082743278,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",1000.0,400.0,250.0
+01_024,"Pearl millet, IKMP 6 variety, whole grains, raw (Burkina Faso), n=1",17.0,0.2325663742168537,"Protein, total
+(g)",14.5,50.0,28.999999999999996
+01_024,"Pearl millet, IKMP 6 variety, whole grains, raw (Burkina Faso), n=1",17.0,0.2325663742168537,"Fibre, total dietary or [fibre, crude]
+(g)",7.6,28.0,27.142857142857142
+01_024,"Pearl millet, IKMP 6 variety, whole grains, raw (Burkina Faso), n=1",17.0,0.2325663742168537,"Calcium
+(mg)",23.0,1300.0,1.7692307692307692
+01_024,"Pearl millet, IKMP 6 variety, whole grains, raw (Burkina Faso), n=1",17.0,0.2325663742168537,"Iron
+(mg)",15.2,18.0,84.44444444444444
+01_024,"Pearl millet, IKMP 6 variety, whole grains, raw (Burkina Faso), n=1",17.0,0.2325663742168537,"Magnesium
+(mg)",96.0,420.0,22.857142857142858
+01_024,"Pearl millet, IKMP 6 variety, whole grains, raw (Burkina Faso), n=1",17.0,0.2325663742168537,"Phosphorus
+(mg)",402.0,1250.0,32.16
+01_024,"Pearl millet, IKMP 6 variety, whole grains, raw (Burkina Faso), n=1",17.0,0.2325663742168537,"Potassium
+(mg)",332.0,4700.0,7.0638297872340425
+01_024,"Pearl millet, IKMP 6 variety, whole grains, raw (Burkina Faso), n=1",17.0,0.2325663742168537,"Zinc
+(mg)",2.58,11.0,23.454545454545457
+01_024,"Pearl millet, IKMP 6 variety, whole grains, raw (Burkina Faso), n=1",17.0,0.2325663742168537,"Copper
+(mg)",0.45,0.9,50.0
+01_024,"Pearl millet, IKMP 6 variety, whole grains, raw (Burkina Faso), n=1",17.0,0.2325663742168537,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",0.0,900.0,0.0
+01_024,"Pearl millet, IKMP 6 variety, whole grains, raw (Burkina Faso), n=1",17.0,0.2325663742168537,"Vitamin C
+(mg)",0.0,90.0,0.0
+01_024,"Pearl millet, IKMP 6 variety, whole grains, raw (Burkina Faso), n=1",17.0,0.2325663742168537,"Vitamin D 
+(mcg)",0.0,20.0,0.0
+01_024,"Pearl millet, IKMP 6 variety, whole grains, raw (Burkina Faso), n=1",17.0,0.2325663742168537,"Vitamin B12
+(mcg)",0.0,2.4,0.0
+01_024,"Pearl millet, IKMP 6 variety, whole grains, raw (Burkina Faso), n=1",17.0,0.2325663742168537,"Vitamin B6
+(mg)",0.35,1.7,20.588235294117645
+01_024,"Pearl millet, IKMP 6 variety, whole grains, raw (Burkina Faso), n=1",17.0,0.2325663742168537,"Thiamine (vitamin B1)
+(mg)",0.29,1.2,24.166666666666668
+01_024,"Pearl millet, IKMP 6 variety, whole grains, raw (Burkina Faso), n=1",17.0,0.2325663742168537,"Riboflavin (vitamin B2)
+(mg)",0.19,1.3,14.615384615384617
+01_024,"Pearl millet, IKMP 6 variety, whole grains, raw (Burkina Faso), n=1",17.0,0.2325663742168537,"Niacin, preformed
+(mg)",2.0,16.0,12.5
+01_024,"Pearl millet, IKMP 6 variety, whole grains, raw (Burkina Faso), n=1",17.0,0.2325663742168537,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",160.0,400.0,40.0
+01_021,"Pearl millet, IKMP 3 variety, whole grains, raw (Burkina Faso), n=1",18.0,0.2324170838630064,"Protein, total
+(g)",13.5,50.0,27.0
+01_021,"Pearl millet, IKMP 3 variety, whole grains, raw (Burkina Faso), n=1",18.0,0.2324170838630064,"Fibre, total dietary or [fibre, crude]
+(g)",10.5,28.0,37.5
+01_021,"Pearl millet, IKMP 3 variety, whole grains, raw (Burkina Faso), n=1",18.0,0.2324170838630064,"Calcium
+(mg)",23.0,1300.0,1.7692307692307692
+01_021,"Pearl millet, IKMP 3 variety, whole grains, raw (Burkina Faso), n=1",18.0,0.2324170838630064,"Iron
+(mg)",15.2,18.0,84.44444444444444
+01_021,"Pearl millet, IKMP 3 variety, whole grains, raw (Burkina Faso), n=1",18.0,0.2324170838630064,"Magnesium
+(mg)",96.0,420.0,22.857142857142858
+01_021,"Pearl millet, IKMP 3 variety, whole grains, raw (Burkina Faso), n=1",18.0,0.2324170838630064,"Phosphorus
+(mg)",402.0,1250.0,32.16
+01_021,"Pearl millet, IKMP 3 variety, whole grains, raw (Burkina Faso), n=1",18.0,0.2324170838630064,"Potassium
+(mg)",332.0,4700.0,7.0638297872340425
+01_021,"Pearl millet, IKMP 3 variety, whole grains, raw (Burkina Faso), n=1",18.0,0.2324170838630064,"Zinc
+(mg)",2.58,11.0,23.454545454545457
+01_021,"Pearl millet, IKMP 3 variety, whole grains, raw (Burkina Faso), n=1",18.0,0.2324170838630064,"Copper
+(mg)",0.45,0.9,50.0
+01_021,"Pearl millet, IKMP 3 variety, whole grains, raw (Burkina Faso), n=1",18.0,0.2324170838630064,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",0.0,900.0,0.0
+01_021,"Pearl millet, IKMP 3 variety, whole grains, raw (Burkina Faso), n=1",18.0,0.2324170838630064,"Vitamin C
+(mg)",0.0,90.0,0.0
+01_021,"Pearl millet, IKMP 3 variety, whole grains, raw (Burkina Faso), n=1",18.0,0.2324170838630064,"Vitamin D 
+(mcg)",0.0,20.0,0.0
+01_021,"Pearl millet, IKMP 3 variety, whole grains, raw (Burkina Faso), n=1",18.0,0.2324170838630064,"Vitamin B12
+(mcg)",0.0,2.4,0.0
+01_021,"Pearl millet, IKMP 3 variety, whole grains, raw (Burkina Faso), n=1",18.0,0.2324170838630064,"Vitamin B6
+(mg)",0.35,1.7,20.588235294117645
+01_021,"Pearl millet, IKMP 3 variety, whole grains, raw (Burkina Faso), n=1",18.0,0.2324170838630064,"Thiamine (vitamin B1)
+(mg)",0.29,1.2,24.166666666666668
+01_021,"Pearl millet, IKMP 3 variety, whole grains, raw (Burkina Faso), n=1",18.0,0.2324170838630064,"Riboflavin (vitamin B2)
+(mg)",0.19,1.3,14.615384615384617
+01_021,"Pearl millet, IKMP 3 variety, whole grains, raw (Burkina Faso), n=1",18.0,0.2324170838630064,"Niacin, preformed
+(mg)",2.0,16.0,12.5
+01_021,"Pearl millet, IKMP 3 variety, whole grains, raw (Burkina Faso), n=1",18.0,0.2324170838630064,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",160.0,400.0,40.0
+01_023,"Pearl millet, IKMP 5 variety, whole grains, raw (Burkina Faso), n=1",19.0,0.2323903421151823,"Protein, total
+(g)",13.3,50.0,26.6
+01_023,"Pearl millet, IKMP 5 variety, whole grains, raw (Burkina Faso), n=1",19.0,0.2323903421151823,"Fibre, total dietary or [fibre, crude]
+(g)",11.7,28.0,41.785714285714285
+01_023,"Pearl millet, IKMP 5 variety, whole grains, raw (Burkina Faso), n=1",19.0,0.2323903421151823,"Calcium
+(mg)",23.0,1300.0,1.7692307692307692
+01_023,"Pearl millet, IKMP 5 variety, whole grains, raw (Burkina Faso), n=1",19.0,0.2323903421151823,"Iron
+(mg)",15.2,18.0,84.44444444444444
+01_023,"Pearl millet, IKMP 5 variety, whole grains, raw (Burkina Faso), n=1",19.0,0.2323903421151823,"Magnesium
+(mg)",96.0,420.0,22.857142857142858
+01_023,"Pearl millet, IKMP 5 variety, whole grains, raw (Burkina Faso), n=1",19.0,0.2323903421151823,"Phosphorus
+(mg)",402.0,1250.0,32.16
+01_023,"Pearl millet, IKMP 5 variety, whole grains, raw (Burkina Faso), n=1",19.0,0.2323903421151823,"Potassium
+(mg)",332.0,4700.0,7.0638297872340425
+01_023,"Pearl millet, IKMP 5 variety, whole grains, raw (Burkina Faso), n=1",19.0,0.2323903421151823,"Zinc
+(mg)",2.58,11.0,23.454545454545457
+01_023,"Pearl millet, IKMP 5 variety, whole grains, raw (Burkina Faso), n=1",19.0,0.2323903421151823,"Copper
+(mg)",0.45,0.9,50.0
+01_023,"Pearl millet, IKMP 5 variety, whole grains, raw (Burkina Faso), n=1",19.0,0.2323903421151823,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",0.0,900.0,0.0
+01_023,"Pearl millet, IKMP 5 variety, whole grains, raw (Burkina Faso), n=1",19.0,0.2323903421151823,"Vitamin C
+(mg)",0.0,90.0,0.0
+01_023,"Pearl millet, IKMP 5 variety, whole grains, raw (Burkina Faso), n=1",19.0,0.2323903421151823,"Vitamin D 
+(mcg)",0.0,20.0,0.0
+01_023,"Pearl millet, IKMP 5 variety, whole grains, raw (Burkina Faso), n=1",19.0,0.2323903421151823,"Vitamin B12
+(mcg)",0.0,2.4,0.0
+01_023,"Pearl millet, IKMP 5 variety, whole grains, raw (Burkina Faso), n=1",19.0,0.2323903421151823,"Vitamin B6
+(mg)",0.35,1.7,20.588235294117645
+01_023,"Pearl millet, IKMP 5 variety, whole grains, raw (Burkina Faso), n=1",19.0,0.2323903421151823,"Thiamine (vitamin B1)
+(mg)",0.29,1.2,24.166666666666668
+01_023,"Pearl millet, IKMP 5 variety, whole grains, raw (Burkina Faso), n=1",19.0,0.2323903421151823,"Riboflavin (vitamin B2)
+(mg)",0.19,1.3,14.615384615384617
+01_023,"Pearl millet, IKMP 5 variety, whole grains, raw (Burkina Faso), n=1",19.0,0.2323903421151823,"Niacin, preformed
+(mg)",2.0,16.0,12.5
+01_023,"Pearl millet, IKMP 5 variety, whole grains, raw (Burkina Faso), n=1",19.0,0.2323903421151823,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",160.0,400.0,40.0
+01_022,"Pearl millet, IKMP 4 variety, whole grains, raw (Burkina Faso), n=1",20.0,0.2322199500009485,"Protein, total
+(g)",12.2,50.0,24.4
+01_022,"Pearl millet, IKMP 4 variety, whole grains, raw (Burkina Faso), n=1",20.0,0.2322199500009485,"Fibre, total dietary or [fibre, crude]
+(g)",8.8,28.0,31.428571428571434
+01_022,"Pearl millet, IKMP 4 variety, whole grains, raw (Burkina Faso), n=1",20.0,0.2322199500009485,"Calcium
+(mg)",23.0,1300.0,1.7692307692307692
+01_022,"Pearl millet, IKMP 4 variety, whole grains, raw (Burkina Faso), n=1",20.0,0.2322199500009485,"Iron
+(mg)",15.2,18.0,84.44444444444444
+01_022,"Pearl millet, IKMP 4 variety, whole grains, raw (Burkina Faso), n=1",20.0,0.2322199500009485,"Magnesium
+(mg)",96.0,420.0,22.857142857142858
+01_022,"Pearl millet, IKMP 4 variety, whole grains, raw (Burkina Faso), n=1",20.0,0.2322199500009485,"Phosphorus
+(mg)",402.0,1250.0,32.16
+01_022,"Pearl millet, IKMP 4 variety, whole grains, raw (Burkina Faso), n=1",20.0,0.2322199500009485,"Potassium
+(mg)",332.0,4700.0,7.0638297872340425
+01_022,"Pearl millet, IKMP 4 variety, whole grains, raw (Burkina Faso), n=1",20.0,0.2322199500009485,"Zinc
+(mg)",2.58,11.0,23.454545454545457
+01_022,"Pearl millet, IKMP 4 variety, whole grains, raw (Burkina Faso), n=1",20.0,0.2322199500009485,"Copper
+(mg)",0.45,0.9,50.0
+01_022,"Pearl millet, IKMP 4 variety, whole grains, raw (Burkina Faso), n=1",20.0,0.2322199500009485,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",0.0,900.0,0.0
+01_022,"Pearl millet, IKMP 4 variety, whole grains, raw (Burkina Faso), n=1",20.0,0.2322199500009485,"Vitamin C
+(mg)",0.0,90.0,0.0
+01_022,"Pearl millet, IKMP 4 variety, whole grains, raw (Burkina Faso), n=1",20.0,0.2322199500009485,"Vitamin D 
+(mcg)",0.0,20.0,0.0
+01_022,"Pearl millet, IKMP 4 variety, whole grains, raw (Burkina Faso), n=1",20.0,0.2322199500009485,"Vitamin B12
+(mcg)",0.0,2.4,0.0
+01_022,"Pearl millet, IKMP 4 variety, whole grains, raw (Burkina Faso), n=1",20.0,0.2322199500009485,"Vitamin B6
+(mg)",0.35,1.7,20.588235294117645
+01_022,"Pearl millet, IKMP 4 variety, whole grains, raw (Burkina Faso), n=1",20.0,0.2322199500009485,"Thiamine (vitamin B1)
+(mg)",0.29,1.2,24.166666666666668
+01_022,"Pearl millet, IKMP 4 variety, whole grains, raw (Burkina Faso), n=1",20.0,0.2322199500009485,"Riboflavin (vitamin B2)
+(mg)",0.19,1.3,14.615384615384617
+01_022,"Pearl millet, IKMP 4 variety, whole grains, raw (Burkina Faso), n=1",20.0,0.2322199500009485,"Niacin, preformed
+(mg)",2.0,16.0,12.5
+01_022,"Pearl millet, IKMP 4 variety, whole grains, raw (Burkina Faso), n=1",20.0,0.2322199500009485,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",160.0,400.0,40.0
+01_025,"Pearl millet, IKMP 7 variety, whole grains, raw (Burkina Faso), n=1",21.0,0.232032376138299,"Protein, total
+(g)",10.9,50.0,21.8
+01_025,"Pearl millet, IKMP 7 variety, whole grains, raw (Burkina Faso), n=1",21.0,0.232032376138299,"Fibre, total dietary or [fibre, crude]
+(g)",8.6,28.0,30.71428571428571
+01_025,"Pearl millet, IKMP 7 variety, whole grains, raw (Burkina Faso), n=1",21.0,0.232032376138299,"Calcium
+(mg)",23.0,1300.0,1.7692307692307692
+01_025,"Pearl millet, IKMP 7 variety, whole grains, raw (Burkina Faso), n=1",21.0,0.232032376138299,"Iron
+(mg)",15.2,18.0,84.44444444444444
+01_025,"Pearl millet, IKMP 7 variety, whole grains, raw (Burkina Faso), n=1",21.0,0.232032376138299,"Magnesium
+(mg)",96.0,420.0,22.857142857142858
+01_025,"Pearl millet, IKMP 7 variety, whole grains, raw (Burkina Faso), n=1",21.0,0.232032376138299,"Phosphorus
+(mg)",402.0,1250.0,32.16
+01_025,"Pearl millet, IKMP 7 variety, whole grains, raw (Burkina Faso), n=1",21.0,0.232032376138299,"Potassium
+(mg)",332.0,4700.0,7.0638297872340425
+01_025,"Pearl millet, IKMP 7 variety, whole grains, raw (Burkina Faso), n=1",21.0,0.232032376138299,"Zinc
+(mg)",2.58,11.0,23.454545454545457
+01_025,"Pearl millet, IKMP 7 variety, whole grains, raw (Burkina Faso), n=1",21.0,0.232032376138299,"Copper
+(mg)",0.45,0.9,50.0
+01_025,"Pearl millet, IKMP 7 variety, whole grains, raw (Burkina Faso), n=1",21.0,0.232032376138299,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",0.0,900.0,0.0
+01_025,"Pearl millet, IKMP 7 variety, whole grains, raw (Burkina Faso), n=1",21.0,0.232032376138299,"Vitamin C
+(mg)",0.0,90.0,0.0
+01_025,"Pearl millet, IKMP 7 variety, whole grains, raw (Burkina Faso), n=1",21.0,0.232032376138299,"Vitamin D 
+(mcg)",0.0,20.0,0.0
+01_025,"Pearl millet, IKMP 7 variety, whole grains, raw (Burkina Faso), n=1",21.0,0.232032376138299,"Vitamin B12
+(mcg)",0.0,2.4,0.0
+01_025,"Pearl millet, IKMP 7 variety, whole grains, raw (Burkina Faso), n=1",21.0,0.232032376138299,"Vitamin B6
+(mg)",0.35,1.7,20.588235294117645
+01_025,"Pearl millet, IKMP 7 variety, whole grains, raw (Burkina Faso), n=1",21.0,0.232032376138299,"Thiamine (vitamin B1)
+(mg)",0.29,1.2,24.166666666666668
+01_025,"Pearl millet, IKMP 7 variety, whole grains, raw (Burkina Faso), n=1",21.0,0.232032376138299,"Riboflavin (vitamin B2)
+(mg)",0.19,1.3,14.615384615384617
+01_025,"Pearl millet, IKMP 7 variety, whole grains, raw (Burkina Faso), n=1",21.0,0.232032376138299,"Niacin, preformed
+(mg)",2.0,16.0,12.5
+01_025,"Pearl millet, IKMP 7 variety, whole grains, raw (Burkina Faso), n=1",21.0,0.232032376138299,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",160.0,400.0,40.0
+01_032,"Pearl millet, combined varieties, whole grains, raw (Burkina Faso)",22.0,0.2319424138685175,"Protein, total
+(g)",10.2,50.0,20.4
+01_032,"Pearl millet, combined varieties, whole grains, raw (Burkina Faso)",22.0,0.2319424138685175,"Fibre, total dietary or [fibre, crude]
+(g)",8.9,28.0,31.78571428571429
+01_032,"Pearl millet, combined varieties, whole grains, raw (Burkina Faso)",22.0,0.2319424138685175,"Calcium
+(mg)",23.0,1300.0,1.7692307692307692
+01_032,"Pearl millet, combined varieties, whole grains, raw (Burkina Faso)",22.0,0.2319424138685175,"Iron
+(mg)",15.2,18.0,84.44444444444444
+01_032,"Pearl millet, combined varieties, whole grains, raw (Burkina Faso)",22.0,0.2319424138685175,"Magnesium
+(mg)",96.0,420.0,22.857142857142858
+01_032,"Pearl millet, combined varieties, whole grains, raw (Burkina Faso)",22.0,0.2319424138685175,"Phosphorus
+(mg)",402.0,1250.0,32.16
+01_032,"Pearl millet, combined varieties, whole grains, raw (Burkina Faso)",22.0,0.2319424138685175,"Potassium
+(mg)",332.0,4700.0,7.0638297872340425
+01_032,"Pearl millet, combined varieties, whole grains, raw (Burkina Faso)",22.0,0.2319424138685175,"Zinc
+(mg)",2.58,11.0,23.454545454545457
+01_032,"Pearl millet, combined varieties, whole grains, raw (Burkina Faso)",22.0,0.2319424138685175,"Copper
+(mg)",0.45,0.9,50.0
+01_032,"Pearl millet, combined varieties, whole grains, raw (Burkina Faso)",22.0,0.2319424138685175,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",0.0,900.0,0.0
+01_032,"Pearl millet, combined varieties, whole grains, raw (Burkina Faso)",22.0,0.2319424138685175,"Vitamin C
+(mg)",0.0,90.0,0.0
+01_032,"Pearl millet, combined varieties, whole grains, raw (Burkina Faso)",22.0,0.2319424138685175,"Vitamin D 
+(mcg)",0.0,20.0,0.0
+01_032,"Pearl millet, combined varieties, whole grains, raw (Burkina Faso)",22.0,0.2319424138685175,"Vitamin B12
+(mcg)",0.0,2.4,0.0
+01_032,"Pearl millet, combined varieties, whole grains, raw (Burkina Faso)",22.0,0.2319424138685175,"Vitamin B6
+(mg)",0.35,1.7,20.588235294117645
+01_032,"Pearl millet, combined varieties, whole grains, raw (Burkina Faso)",22.0,0.2319424138685175,"Thiamine (vitamin B1)
+(mg)",0.29,1.2,24.166666666666668
+01_032,"Pearl millet, combined varieties, whole grains, raw (Burkina Faso)",22.0,0.2319424138685175,"Riboflavin (vitamin B2)
+(mg)",0.19,1.3,14.615384615384617
+01_032,"Pearl millet, combined varieties, whole grains, raw (Burkina Faso)",22.0,0.2319424138685175,"Niacin, preformed
+(mg)",2.0,16.0,12.5
+01_032,"Pearl millet, combined varieties, whole grains, raw (Burkina Faso)",22.0,0.2319424138685175,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",160.0,400.0,40.0
+01_027,"Pearl millet, IKMP 9 variety, whole grains, raw (Burkina Faso), n=1",23.0,0.2319047466790637,"Protein, total
+(g)",9.9,50.0,19.8
+01_027,"Pearl millet, IKMP 9 variety, whole grains, raw (Burkina Faso), n=1",23.0,0.2319047466790637,"Fibre, total dietary or [fibre, crude]
+(g)",9.5,28.0,33.92857142857143
+01_027,"Pearl millet, IKMP 9 variety, whole grains, raw (Burkina Faso), n=1",23.0,0.2319047466790637,"Calcium
+(mg)",23.0,1300.0,1.7692307692307692
+01_027,"Pearl millet, IKMP 9 variety, whole grains, raw (Burkina Faso), n=1",23.0,0.2319047466790637,"Iron
+(mg)",15.2,18.0,84.44444444444444
+01_027,"Pearl millet, IKMP 9 variety, whole grains, raw (Burkina Faso), n=1",23.0,0.2319047466790637,"Magnesium
+(mg)",96.0,420.0,22.857142857142858
+01_027,"Pearl millet, IKMP 9 variety, whole grains, raw (Burkina Faso), n=1",23.0,0.2319047466790637,"Phosphorus
+(mg)",402.0,1250.0,32.16
+01_027,"Pearl millet, IKMP 9 variety, whole grains, raw (Burkina Faso), n=1",23.0,0.2319047466790637,"Potassium
+(mg)",332.0,4700.0,7.0638297872340425
+01_027,"Pearl millet, IKMP 9 variety, whole grains, raw (Burkina Faso), n=1",23.0,0.2319047466790637,"Zinc
+(mg)",2.58,11.0,23.454545454545457
+01_027,"Pearl millet, IKMP 9 variety, whole grains, raw (Burkina Faso), n=1",23.0,0.2319047466790637,"Copper
+(mg)",0.45,0.9,50.0
+01_027,"Pearl millet, IKMP 9 variety, whole grains, raw (Burkina Faso), n=1",23.0,0.2319047466790637,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",0.0,900.0,0.0
+01_027,"Pearl millet, IKMP 9 variety, whole grains, raw (Burkina Faso), n=1",23.0,0.2319047466790637,"Vitamin C
+(mg)",0.0,90.0,0.0
+01_027,"Pearl millet, IKMP 9 variety, whole grains, raw (Burkina Faso), n=1",23.0,0.2319047466790637,"Vitamin D 
+(mcg)",0.0,20.0,0.0
+01_027,"Pearl millet, IKMP 9 variety, whole grains, raw (Burkina Faso), n=1",23.0,0.2319047466790637,"Vitamin B12
+(mcg)",0.0,2.4,0.0
+01_027,"Pearl millet, IKMP 9 variety, whole grains, raw (Burkina Faso), n=1",23.0,0.2319047466790637,"Vitamin B6
+(mg)",0.35,1.7,20.588235294117645
+01_027,"Pearl millet, IKMP 9 variety, whole grains, raw (Burkina Faso), n=1",23.0,0.2319047466790637,"Thiamine (vitamin B1)
+(mg)",0.29,1.2,24.166666666666668
+01_027,"Pearl millet, IKMP 9 variety, whole grains, raw (Burkina Faso), n=1",23.0,0.2319047466790637,"Riboflavin (vitamin B2)
+(mg)",0.19,1.3,14.615384615384617
+01_027,"Pearl millet, IKMP 9 variety, whole grains, raw (Burkina Faso), n=1",23.0,0.2319047466790637,"Niacin, preformed
+(mg)",2.0,16.0,12.5
+01_027,"Pearl millet, IKMP 9 variety, whole grains, raw (Burkina Faso), n=1",23.0,0.2319047466790637,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",160.0,400.0,40.0
+01_030,"Pearl millet, IKMP 12 variety, whole grains, raw (Burkina Faso), n=1",24.0,0.231889396094073,"Protein, total
+(g)",9.8,50.0,19.6
+01_030,"Pearl millet, IKMP 12 variety, whole grains, raw (Burkina Faso), n=1",24.0,0.231889396094073,"Fibre, total dietary or [fibre, crude]
+(g)",9.0,28.0,32.142857142857146
+01_030,"Pearl millet, IKMP 12 variety, whole grains, raw (Burkina Faso), n=1",24.0,0.231889396094073,"Calcium
+(mg)",23.0,1300.0,1.7692307692307692
+01_030,"Pearl millet, IKMP 12 variety, whole grains, raw (Burkina Faso), n=1",24.0,0.231889396094073,"Iron
+(mg)",15.2,18.0,84.44444444444444
+01_030,"Pearl millet, IKMP 12 variety, whole grains, raw (Burkina Faso), n=1",24.0,0.231889396094073,"Magnesium
+(mg)",96.0,420.0,22.857142857142858
+01_030,"Pearl millet, IKMP 12 variety, whole grains, raw (Burkina Faso), n=1",24.0,0.231889396094073,"Phosphorus
+(mg)",402.0,1250.0,32.16
+01_030,"Pearl millet, IKMP 12 variety, whole grains, raw (Burkina Faso), n=1",24.0,0.231889396094073,"Potassium
+(mg)",332.0,4700.0,7.0638297872340425
+01_030,"Pearl millet, IKMP 12 variety, whole grains, raw (Burkina Faso), n=1",24.0,0.231889396094073,"Zinc
+(mg)",2.58,11.0,23.454545454545457
+01_030,"Pearl millet, IKMP 12 variety, whole grains, raw (Burkina Faso), n=1",24.0,0.231889396094073,"Copper
+(mg)",0.45,0.9,50.0
+01_030,"Pearl millet, IKMP 12 variety, whole grains, raw (Burkina Faso), n=1",24.0,0.231889396094073,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",0.0,900.0,0.0
+01_030,"Pearl millet, IKMP 12 variety, whole grains, raw (Burkina Faso), n=1",24.0,0.231889396094073,"Vitamin C
+(mg)",0.0,90.0,0.0
+01_030,"Pearl millet, IKMP 12 variety, whole grains, raw (Burkina Faso), n=1",24.0,0.231889396094073,"Vitamin D 
+(mcg)",0.0,20.0,0.0
+01_030,"Pearl millet, IKMP 12 variety, whole grains, raw (Burkina Faso), n=1",24.0,0.231889396094073,"Vitamin B12
+(mcg)",0.0,2.4,0.0
+01_030,"Pearl millet, IKMP 12 variety, whole grains, raw (Burkina Faso), n=1",24.0,0.231889396094073,"Vitamin B6
+(mg)",0.35,1.7,20.588235294117645
+01_030,"Pearl millet, IKMP 12 variety, whole grains, raw (Burkina Faso), n=1",24.0,0.231889396094073,"Thiamine (vitamin B1)
+(mg)",0.29,1.2,24.166666666666668
+01_030,"Pearl millet, IKMP 12 variety, whole grains, raw (Burkina Faso), n=1",24.0,0.231889396094073,"Riboflavin (vitamin B2)
+(mg)",0.19,1.3,14.615384615384617
+01_030,"Pearl millet, IKMP 12 variety, whole grains, raw (Burkina Faso), n=1",24.0,0.231889396094073,"Niacin, preformed
+(mg)",2.0,16.0,12.5
+01_030,"Pearl millet, IKMP 12 variety, whole grains, raw (Burkina Faso), n=1",24.0,0.231889396094073,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",160.0,400.0,40.0
+01_018,"Pearl millet, IKMV 8201 variety, whole grains, raw (Burkina Faso), n=1",25.0,0.2318524719783211,"Protein, total
+(g)",9.5,50.0,19.0
+01_018,"Pearl millet, IKMV 8201 variety, whole grains, raw (Burkina Faso), n=1",25.0,0.2318524719783211,"Fibre, total dietary or [fibre, crude]
+(g)",8.8,28.0,31.428571428571434
+01_018,"Pearl millet, IKMV 8201 variety, whole grains, raw (Burkina Faso), n=1",25.0,0.2318524719783211,"Calcium
+(mg)",23.0,1300.0,1.7692307692307692
+01_018,"Pearl millet, IKMV 8201 variety, whole grains, raw (Burkina Faso), n=1",25.0,0.2318524719783211,"Iron
+(mg)",15.2,18.0,84.44444444444444
+01_018,"Pearl millet, IKMV 8201 variety, whole grains, raw (Burkina Faso), n=1",25.0,0.2318524719783211,"Magnesium
+(mg)",96.0,420.0,22.857142857142858
+01_018,"Pearl millet, IKMV 8201 variety, whole grains, raw (Burkina Faso), n=1",25.0,0.2318524719783211,"Phosphorus
+(mg)",402.0,1250.0,32.16
+01_018,"Pearl millet, IKMV 8201 variety, whole grains, raw (Burkina Faso), n=1",25.0,0.2318524719783211,"Potassium
+(mg)",332.0,4700.0,7.0638297872340425
+01_018,"Pearl millet, IKMV 8201 variety, whole grains, raw (Burkina Faso), n=1",25.0,0.2318524719783211,"Zinc
+(mg)",2.58,11.0,23.454545454545457
+01_018,"Pearl millet, IKMV 8201 variety, whole grains, raw (Burkina Faso), n=1",25.0,0.2318524719783211,"Copper
+(mg)",0.45,0.9,50.0
+01_018,"Pearl millet, IKMV 8201 variety, whole grains, raw (Burkina Faso), n=1",25.0,0.2318524719783211,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",0.0,900.0,0.0
+01_018,"Pearl millet, IKMV 8201 variety, whole grains, raw (Burkina Faso), n=1",25.0,0.2318524719783211,"Vitamin C
+(mg)",0.0,90.0,0.0
+01_018,"Pearl millet, IKMV 8201 variety, whole grains, raw (Burkina Faso), n=1",25.0,0.2318524719783211,"Vitamin D 
+(mcg)",0.0,20.0,0.0
+01_018,"Pearl millet, IKMV 8201 variety, whole grains, raw (Burkina Faso), n=1",25.0,0.2318524719783211,"Vitamin B12
+(mcg)",0.0,2.4,0.0
+01_018,"Pearl millet, IKMV 8201 variety, whole grains, raw (Burkina Faso), n=1",25.0,0.2318524719783211,"Vitamin B6
+(mg)",0.35,1.7,20.588235294117645
+01_018,"Pearl millet, IKMV 8201 variety, whole grains, raw (Burkina Faso), n=1",25.0,0.2318524719783211,"Thiamine (vitamin B1)
+(mg)",0.29,1.2,24.166666666666668
+01_018,"Pearl millet, IKMV 8201 variety, whole grains, raw (Burkina Faso), n=1",25.0,0.2318524719783211,"Riboflavin (vitamin B2)
+(mg)",0.19,1.3,14.615384615384617
+01_018,"Pearl millet, IKMV 8201 variety, whole grains, raw (Burkina Faso), n=1",25.0,0.2318524719783211,"Niacin, preformed
+(mg)",2.0,16.0,12.5
+01_018,"Pearl millet, IKMV 8201 variety, whole grains, raw (Burkina Faso), n=1",25.0,0.2318524719783211,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",160.0,400.0,40.0

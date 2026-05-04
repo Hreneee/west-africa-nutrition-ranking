@@ -1,0 +1,51 @@
+nutrient_key,nutrient_name,search_terms
+protein,"Protein, total
+(g)",protein
+net_carbs,"net_carbs
+(g)",net carbohydrate|net carbohydrates|carbohydrate|carbohydrates
+fiber,"Fibre, total dietary or [fibre, crude]
+(g)",fiber|fibre|dietary fiber|dietary fibre
+calcium,"Calcium
+(mg)",calcium
+iron,"Iron
+(mg)",iron
+magnesium,"Magnesium
+(mg)",magnesium
+phosphorus,"Phosphorus
+(mg)",phosphorus|phosphate
+potassium,"Potassium
+(mg)",potassium
+sodium,"Sodium
+(mg)",sodium|salt
+zinc,"Zinc
+(mg)",zinc
+copper,"Copper
+(mg)",copper
+vitamin_a,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",vitamin a|retinol|retinol activity equivalent|retinol activity equivalents|rae
+vitamin_c,"Vitamin C
+(mg)",vitamin c|ascorbic acid
+vitamin_d,"Vitamin D 
+(mcg)",vitamin d|cholecalciferol
+vitamin_b12,"Vitamin B12
+(mcg)",vitamin b12|b12|cobalamin
+vitamin_b6,"Vitamin B6
+(mg)",vitamin b6|b6|pyridoxine
+thiamine,"Thiamine (vitamin B1)
+(mg)",thiamine|vitamin b1|b1
+riboflavin,"Riboflavin (vitamin B2)
+(mg)",riboflavin|vitamin b2|b2
+niacin,"Niacin, preformed
+(mg)",niacin|vitamin b3|b3
+folate,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",folate|folic acid|vitamin b9|b9
+saturated_fat,"Fatty acids, total saturated
+(g)",saturated fat|saturated fatty acid|saturated fatty acids
+monounsaturated_fat,"Fatty acids, total monounsaturated 
+(g)",monounsaturated fat|monounsaturated fatty acid|monounsaturated fatty acids|mufa
+polyunsaturated_fat,"Fatty acids, total polyunsaturated
+(g)",polyunsaturated fat|polyunsaturated fatty acid|polyunsaturated fatty acids|pufa
+linoleic_acid,"Linoleic acid 
+(g)",linoleic acid
+alpha_linolenic_acid,"Alpha-linolenic acid
+(g)",alpha-linolenic acid|alpha linolenic acid|ala

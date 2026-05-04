@@ -1,0 +1,51 @@
+nutrient_key,nutrient_name,direction
+protein,"Protein, total
+(g)",benefit
+net_carbs,"net_carbs
+(g)",cost
+fiber,"Fibre, total dietary or [fibre, crude]
+(g)",benefit
+calcium,"Calcium
+(mg)",benefit
+iron,"Iron
+(mg)",benefit
+magnesium,"Magnesium
+(mg)",benefit
+phosphorus,"Phosphorus
+(mg)",benefit
+potassium,"Potassium
+(mg)",benefit
+sodium,"Sodium
+(mg)",cost
+zinc,"Zinc
+(mg)",benefit
+copper,"Copper
+(mg)",benefit
+vitamin_a,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",benefit
+vitamin_c,"Vitamin C
+(mg)",benefit
+vitamin_d,"Vitamin D 
+(mcg)",benefit
+vitamin_b12,"Vitamin B12
+(mcg)",benefit
+vitamin_b6,"Vitamin B6
+(mg)",benefit
+thiamine,"Thiamine (vitamin B1)
+(mg)",benefit
+riboflavin,"Riboflavin (vitamin B2)
+(mg)",benefit
+niacin,"Niacin, preformed
+(mg)",benefit
+folate,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",benefit
+saturated_fat,"Fatty acids, total saturated
+(g)",cost
+monounsaturated_fat,"Fatty acids, total monounsaturated 
+(g)",benefit
+polyunsaturated_fat,"Fatty acids, total polyunsaturated
+(g)",benefit
+linoleic_acid,"Linoleic acid 
+(g)",benefit
+alpha_linolenic_acid,"Alpha-linolenic acid
+(g)",benefit

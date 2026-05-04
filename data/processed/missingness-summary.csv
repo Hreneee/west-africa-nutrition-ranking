@@ -1,0 +1,51 @@
+nutrient_key,nutrient_name,missing_fraction,missing_percent,retained
+protein,"Protein, total
+(g)",0.001,0.1,True
+net_carbs,"net_carbs
+(g)",0.001,0.1,True
+fiber,"Fibre, total dietary or [fibre, crude]
+(g)",0.001,0.1,True
+calcium,"Calcium
+(mg)",0.001,0.1,True
+iron,"Iron
+(mg)",0.017,1.7000000000000002,True
+magnesium,"Magnesium
+(mg)",0.002,0.2,True
+phosphorus,"Phosphorus
+(mg)",0.0,0.0,True
+potassium,"Potassium
+(mg)",0.003,0.3,True
+sodium,"Sodium
+(mg)",0.005,0.5,True
+zinc,"Zinc
+(mg)",0.005,0.5,True
+copper,"Copper
+(mg)",0.009,0.8999999999999999,True
+vitamin_a,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",0.059,5.8999999999999995,True
+vitamin_c,"Vitamin C
+(mg)",0.03,3.0,True
+vitamin_d,"Vitamin D 
+(mcg)",0.027,2.7,True
+vitamin_b12,"Vitamin B12
+(mcg)",0.012,1.2,True
+vitamin_b6,"Vitamin B6
+(mg)",0.017,1.7000000000000002,True
+thiamine,"Thiamine (vitamin B1)
+(mg)",0.011,1.0999999999999999,True
+riboflavin,"Riboflavin (vitamin B2)
+(mg)",0.004,0.4,True
+niacin,"Niacin, preformed
+(mg)",0.009,0.8999999999999999,True
+folate,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",0.015,1.5,True
+saturated_fat,"Fatty acids, total saturated
+(g)",0.019,1.9,True
+monounsaturated_fat,"Fatty acids, total monounsaturated 
+(g)",0.019,1.9,True
+polyunsaturated_fat,"Fatty acids, total polyunsaturated
+(g)",0.019,1.9,True
+linoleic_acid,"Linoleic acid 
+(g)",0.04,4.0,True
+alpha_linolenic_acid,"Alpha-linolenic acid
+(g)",0.035,3.5000000000000004,True

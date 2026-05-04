@@ -1,0 +1,35 @@
+nutrient_key,nutrient_name,supporting_abstract_count,nutrient_search_terms,deficiency_terms_used,weight
+iron,"Iron
+(mg)",123,iron,anaemia|anemia|below requirement|deficiencies|deficiency|deficient|inadequate intake|iron deficiency|iron-deficiency anaemia|iron-deficiency anemia|low intake|low status|malnutrition|micronutrient deficiency|not meeting requirements|poor intake|poor status|stunting|suboptimal intake|undernutrition|wasting,0.5061728395061729
+protein,"Protein, total
+(g)",32,protein,below requirement|deficiencies|deficiency|deficient|inadequate intake|kwashiorkor|low intake|low status|malnutrition|micronutrient deficiency|not meeting requirements|poor intake|poor status|protein deficiency|protein energy malnutrition|protein-energy malnutrition|stunting|suboptimal intake|undernutrition|wasting,0.13168724279835392
+vitamin_a,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",23,vitamin a|retinol|retinol activity equivalent|retinol activity equivalents|rae,below requirement|deficiencies|deficiency|deficient|inadequate intake|low intake|low status|malnutrition|micronutrient deficiency|night blindness|not meeting requirements|poor intake|poor status|stunting|suboptimal intake|undernutrition|vitamin a deficiency|wasting|xerophthalmia,0.09465020576131687
+zinc,"Zinc
+(mg)",15,zinc,below requirement|deficiencies|deficiency|deficient|inadequate intake|low intake|low status|malnutrition|micronutrient deficiency|not meeting requirements|poor intake|poor status|stunting|suboptimal intake|undernutrition|wasting|zinc deficiency,0.06172839506172839
+folate,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",15,folate|folic acid|vitamin b9|b9,below requirement|deficiencies|deficiency|deficient|folate deficiency|folic acid deficiency|inadequate intake|low intake|low status|malnutrition|megaloblastic anemia|micronutrient deficiency|neural tube defect|not meeting requirements|poor intake|poor status|stunting|suboptimal intake|undernutrition|wasting,0.06172839506172839
+vitamin_c,"Vitamin C
+(mg)",7,vitamin c|ascorbic acid,below requirement|deficiencies|deficiency|deficient|inadequate intake|low intake|low status|malnutrition|micronutrient deficiency|not meeting requirements|poor intake|poor status|stunting|suboptimal intake|undernutrition|wasting,0.02880658436213992
+sodium,"Sodium
+(mg)",6,sodium|salt,below requirement|deficiencies|deficiency|deficient|inadequate intake|low intake|low status|malnutrition|micronutrient deficiency|not meeting requirements|poor intake|poor status|stunting|suboptimal intake|undernutrition|wasting,0.024691358024691357
+vitamin_b12,"Vitamin B12
+(mcg)",5,vitamin b12|b12|cobalamin,below requirement|cobalamin deficiency|deficiencies|deficiency|deficient|inadequate intake|low intake|low status|malnutrition|megaloblastic anemia|micronutrient deficiency|not meeting requirements|poor intake|poor status|stunting|suboptimal intake|undernutrition|vitamin b12 deficiency|wasting,0.0205761316872428
+calcium,"Calcium
+(mg)",4,calcium,below requirement|calcium deficiency|deficiencies|deficiency|deficient|inadequate intake|low intake|low status|malnutrition|micronutrient deficiency|not meeting requirements|poor intake|poor status|rickets|stunting|suboptimal intake|undernutrition|wasting,0.01646090534979424
+net_carbs,"net_carbs
+(g)",3,net carbohydrate|net carbohydrates|carbohydrate|carbohydrates,below requirement|deficiencies|deficiency|deficient|excess carbohydrate intake|high carbohydrate intake|inadequate intake|low intake|low status|malnutrition|micronutrient deficiency|not meeting requirements|poor intake|poor status|refined carbohydrate|stunting|suboptimal intake|undernutrition|wasting,0.012345679012345678
+magnesium,"Magnesium
+(mg)",2,magnesium,below requirement|deficiencies|deficiency|deficient|inadequate intake|low intake|low status|malnutrition|micronutrient deficiency|not meeting requirements|poor intake|poor status|stunting|suboptimal intake|undernutrition|wasting,0.00823045267489712
+vitamin_d,"Vitamin D 
+(mcg)",2,vitamin d|cholecalciferol,below requirement|deficiencies|deficiency|deficient|inadequate intake|low intake|low status|malnutrition|micronutrient deficiency|not meeting requirements|poor intake|poor status|rickets|stunting|suboptimal intake|undernutrition|vitamin d deficiency|wasting,0.00823045267489712
+polyunsaturated_fat,"Fatty acids, total polyunsaturated
+(g)",2,polyunsaturated fat|polyunsaturated fatty acid|polyunsaturated fatty acids|pufa,below requirement|deficiencies|deficiency|deficient|inadequate intake|low intake|low status|malnutrition|micronutrient deficiency|not meeting requirements|poor intake|poor status|stunting|suboptimal intake|undernutrition|wasting,0.00823045267489712
+phosphorus,"Phosphorus
+(mg)",1,phosphorus|phosphate,below requirement|deficiencies|deficiency|deficient|inadequate intake|low intake|low status|malnutrition|micronutrient deficiency|not meeting requirements|poor intake|poor status|stunting|suboptimal intake|undernutrition|wasting,0.00411522633744856
+copper,"Copper
+(mg)",1,copper,below requirement|deficiencies|deficiency|deficient|inadequate intake|low intake|low status|malnutrition|micronutrient deficiency|not meeting requirements|poor intake|poor status|stunting|suboptimal intake|undernutrition|wasting,0.00411522633744856
+potassium,"Potassium
+(mg)",1,potassium,below requirement|deficiencies|deficiency|deficient|inadequate intake|low intake|low status|malnutrition|micronutrient deficiency|not meeting requirements|poor intake|poor status|stunting|suboptimal intake|undernutrition|wasting,0.00411522633744856
+fiber,"Fibre, total dietary or [fibre, crude]
+(g)",1,fiber|fibre|dietary fiber|dietary fibre,below requirement|deficiencies|deficiency|deficient|inadequate fiber intake|inadequate fibre intake|inadequate intake|low fiber intake|low fibre intake|low intake|low status|malnutrition|micronutrient deficiency|not meeting requirements|poor intake|poor status|stunting|suboptimal intake|undernutrition|wasting,0.00411522633744856

@@ -1,0 +1,69 @@
+column,reason
+Food name in French,"Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+BiblioID/Source,"Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+Edible portion coefficient 1 (from as purchased to as described),"Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+Edible portion coefficient 2 (from as described to as eaten),"Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+Fatty acid conversion factor,"Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+Conversion factor for calculating total protein from total nitrogen,"Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Energy
+(kJ)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Energy
+(kcal)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Sum of proximate components
+(g)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Water
+(g)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Alcohol
+(g)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Ash
+(g)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Fat, total or [fat, derived by analysis using continuous extraction]
+(g)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Carbohydrate, available; calculated by difference
+(g)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Vitamin A (expressed in retinol equivalents)
+(mcg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Retinol
+(mcg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Beta-carotene equivalents or [beta-carotene]
+(mcg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Alpha-carotene
+(mcg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Beta-carotene
+(mcg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Beta-cryptoxanthin
+(mcg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Vitamin E (expressed in alpha-tocopherol equivalents) or [alpha-tocopherol]
+(mg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Alpha-tocopherol
+(mg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Beta-tocopherol
+(mg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Gamma-tocopherol
+(mg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Delta-tocopherol
+(mg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Niacin equivalents or [niacin, preformed] (vitamin B3)
+(mg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Tryptophan
+(mg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Folic acid (synthetic)
+(mcg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Folate, naturally occurring (food folate)
+(mcg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Folate, dietary folate equivalents
+(mcg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Cholesterol
+(mg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Phytate, total or [phytate, determined by direct precipitation] or [phytate, determined by indirect precipitation]
+(mg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Inositol triphosphate (IP3)
+(mg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Inositol tetraphosphate (IP4)
+(mg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Inositol pentaphosphate (IP5)
+(mg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Inositol hexaphosphate (IP6)
+(mg)","Removed before model construction as metadata, duplicate representation, redundant total, or non-criterion field."
+"Carbohydrate, available; calculated by difference
+(g)",Replaced by net_carbs = total carbohydrate - fiber.

@@ -1,0 +1,35 @@
+nutrient_name,ideal_best,ideal_worst,direction
+"Calcium
+(mg)",0.006862788721247,0.0,benefit
+"Copper
+(mg)",0.0021696854322388,0.0,benefit
+"Fatty acids, total polyunsaturated
+(g)",0.0027143755623104,0.0,benefit
+"Fibre, total dietary or [fibre, crude]
+(g)",0.001055897867863,0.0,benefit
+"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)",0.0187179346593153,0.0,benefit
+"Iron
+(mg)",0.1903692231189894,0.0,benefit
+"Magnesium
+(mg)",0.0032936439670796,0.0,benefit
+"Phosphorus
+(mg)",0.0009578456669667,0.0,benefit
+"Potassium
+(mg)",0.0011733840429162,0.0,benefit
+"Protein, total
+(g)",0.0212666965988376,0.0,benefit
+"Sodium
+(mg)",0.0,0.0128859682845188,cost
+"Vitamin A (expressed in retinol activity equivalents)
+(mcg)",0.0382421317098182,0.0,benefit
+"Vitamin B12
+(mcg)",0.0082650977776869,0.0,benefit
+"Vitamin C
+(mg)",0.0107912394255973,0.0,benefit
+"Vitamin D 
+(mcg)",0.0043627014530985,0.0,benefit
+"Zinc
+(mg)",0.0109913656440171,0.0,benefit
+"net_carbs
+(g)",-0.0004497731008011,0.0014909499809537,cost

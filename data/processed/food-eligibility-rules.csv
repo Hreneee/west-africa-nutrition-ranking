@@ -1,0 +1,9 @@
+rule_id,match_column,pattern,eligibility_status,reason,source
+E001,food_name,"^potash,\s*solid$",exclude,Culinary additive/caustic compound; not a standalone food recommendation.,MedlinePlus potassium carbonate/hydroxide; WAFCT food name
+E002,food_name,^baking soda\b|sodium bicarbonate,exclude,"Leavening/processing agent, not a standalone food recommendation.",Project food-candidate eligibility rule; WAFCT food name
+E003,food_name,^salt$,exclude,"Seasoning used in small amounts, not a standalone food recommendation.",Project food-candidate eligibility rule; WAFCT food name
+E004,food_name,\bcube\b|bouillon|stock cube,exclude,Seasoning cube/condiment used in small amounts.,Project food-candidate eligibility rule; WAFCT food name
+E005,food_name,^vinegar$,exclude,"Condiment used in small amounts, not a standalone food recommendation.",Project food-candidate eligibility rule; WAFCT food name
+R001,food_name,"^yeast, dried$|yeast extract",manual_review,Ambiguous nutrient-dense ingredient/condiment; review before allowing into TOPSIS.,Project food-candidate eligibility rule; WAFCT food name
+E006,Code,^13_,exclude,"Condiments, spices, additives, sweeteners, or minor-use ingredients; per-100g ranking would overstate relevance.",Project food-candidate eligibility rule; WAFCT code group 13 and food names
+E007,food_name,^ovaltine\b,exclude,Beverage powder/product outside core food-prioritization candidate set.,Project food-candidate eligibility rule; WAFCT food name

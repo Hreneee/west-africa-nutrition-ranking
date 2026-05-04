@@ -1,0 +1,11 @@
+missingness-threshold=10.00%
+foods-eligible-before-missingness-filter=1000
+foods-excluded-by-eligibility-filter=26
+foods-pending-manual-review=2
+nutrients-used-in-topsis=17
+foods-ranked=834
+foods-after-complete-case-filter=834
+foods-removed-for-missing-retained-nutrients=166
+top-food=Carrot, boiled* (without salt), drained
+carbohydrate-handling=net_carbs = total_carbs - fiber; total carbs removed; net carbs is cost; fiber is benefit
+missing-data-handling=complete-case filtering after missingness threshold; no mean imputation

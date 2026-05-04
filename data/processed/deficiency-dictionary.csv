@@ -1,0 +1,48 @@
+nutrient_key,deficiency_term,term_type
+iron,anemia,targeted
+iron,anaemia,targeted
+iron,iron deficiency,targeted
+iron,iron-deficiency anemia,targeted
+iron,iron-deficiency anaemia,targeted
+vitamin_a,vitamin a deficiency,targeted
+vitamin_a,night blindness,targeted
+vitamin_a,xerophthalmia,targeted
+zinc,zinc deficiency,targeted
+folate,folate deficiency,targeted
+folate,folic acid deficiency,targeted
+folate,neural tube defect,targeted
+folate,megaloblastic anemia,targeted
+vitamin_b12,vitamin b12 deficiency,targeted
+vitamin_b12,cobalamin deficiency,targeted
+vitamin_b12,megaloblastic anemia,targeted
+vitamin_d,vitamin d deficiency,targeted
+vitamin_d,rickets,targeted
+calcium,calcium deficiency,targeted
+calcium,rickets,targeted
+protein,protein deficiency,targeted
+protein,protein energy malnutrition,targeted
+protein,protein-energy malnutrition,targeted
+protein,kwashiorkor,targeted
+fiber,low fiber intake,targeted
+fiber,low fibre intake,targeted
+fiber,inadequate fiber intake,targeted
+fiber,inadequate fibre intake,targeted
+net_carbs,excess carbohydrate intake,targeted
+net_carbs,high carbohydrate intake,targeted
+net_carbs,refined carbohydrate,targeted
+general_context,deficiency,shared_context
+general_context,deficiencies,shared_context
+general_context,deficient,shared_context
+general_context,inadequate intake,shared_context
+general_context,low intake,shared_context
+general_context,low status,shared_context
+general_context,poor intake,shared_context
+general_context,poor status,shared_context
+general_context,undernutrition,shared_context
+general_context,malnutrition,shared_context
+general_context,stunting,shared_context
+general_context,wasting,shared_context
+general_context,micronutrient deficiency,shared_context
+general_context,suboptimal intake,shared_context
+general_context,below requirement,shared_context
+general_context,not meeting requirements,shared_context

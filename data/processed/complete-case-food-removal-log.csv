@@ -1,0 +1,528 @@
+Code,Food name in English,Scientific name,missing_nutrient_count,missing_nutrients
+01_187,"Cake, plain, unfortified",,1,"Vitamin D 
+(mcg)"
+01_182,"Cornflakes (breakfast cereal), unfortified",,1,"Copper
+(mg)"
+01_008,"Maize, Gougba variety, whole kernel, dry, raw (Benin), n=1",Zea mays,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+01_009,"Maize, Gbaévè variety, whole kernel, dry, raw (Benin), n=1",Zea mays,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+01_010,"Maize, DMR-ESR-W variety, whole kernel, dry, raw (Benin), n=1",Zea mays,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+01_011,"Maize, POZA - RICA 7843 - SR  variety, whole kernel, dry, raw (Benin), n=1",Zea mays,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+01_012,"Maize, TZPB-SR variety, whole kernel, dry, raw (Benin), n=1",Zea mays,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+01_013,"Maize, Gnonli variety, whole kernel, dry, raw (Benin), n=1",Zea mays,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+01_014,"Maize, combined varieties, whole kernel, dry, raw (Benin)",Zea mays,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+01_123,"Maize, combined varieties, whole kernel (Benin), boiled* (as part of a recipe)",Zea mays,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+01_062,"Maize, combined varieties, whole kernel (Benin), boiled* (without salt), drained",Zea mays,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+01_065,"Rice, red native, hulled, raw",Oryza glaberrima,1,"Linoleic acid 
+(g)"
+01_136,"Rice, red native, hulled, boiled* (as part of a recipe)",Oryza glaberrima,1,"Linoleic acid 
+(g)"
+01_066,"Rice, red native, hulled, boiled* (without salt), drained",Oryza glaberrima,1,"Linoleic acid 
+(g)"
+01_067,"Rice, red native, milled, raw",Oryza glaberrima,1,"Linoleic acid 
+(g)"
+01_137,"Rice, red native, milled, boiled* (as part of a recipe)",Oryza glaberrima,1,"Linoleic acid 
+(g)"
+01_068,"Rice, red native, milled, boiled* (without salt), drained",Oryza glaberrima,1,"Linoleic acid 
+(g)"
+01_184,"Teff, whole grains, raw",Eragrostis tef,1,"Linoleic acid 
+(g)"
+01_186,"Teff, whole grains, boiled* (as part of a recipe)",Eragrostis tef,1,"Linoleic acid 
+(g)"
+01_185,"Teff, whole grains, boiled* (without salt), drained",Eragrostis tef,1,"Linoleic acid 
+(g)"
+01_183,"Weet-Bix (breakfast cereal), unfortified",,1,"Copper
+(mg)"
+02_036,"Yam, tuber, flour, from white yam tuber",Dioscorea spp.,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+02_027,"Yam, tuber, Isu akoko, raw (Nigeria), n=1",Dioscorea spp.,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+02_028,"Yam, tuber, Isu oko, raw (Nigeria), n=1",Dioscorea spp.,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+02_029,"Yam, tuber, Amara, raw (Nigeria), n=1",Dioscorea dumetorum,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+02_030,"Yam, tuber, Chika, kundu, raw (Nigeria), n=1",Dioscorea dumetorum,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+02_033,"Yam, tuber, Giwa, raw (Nigeria), n=1",Dioscorea dumetorum,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+02_031,"Yam, tuber, Isu Abuja, raw (Nigeria), n=1",Dioscorea spp.,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+02_032,"Yam, tuber, Pepa, raw (Nigeria), n=1",Dioscorea dumetorum,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+02_034,"Yam, tuber, combined cultivars, raw (Nigeria)",Dioscorea spp.,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+02_078,"Yam, tuber, combined cultivars (Nigeria), boiled* (as part of a recipe)",Dioscorea spp.,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+02_035,"Yam, tuber, combined cultivars (Nigeria), boiled* (without salt), drained",Dioscorea spp.,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+03_042,"African locust bean, fermented (soumbala)",Parkia biglobosa,2,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin B12
+(mcg)"
+03_044,"Afzelia africana, shelled, roasted, milled",Afzelia africana,16,"Magnesium
+(mg)|Potassium
+(mg)|Sodium
+(mg)|Copper
+(mg)|Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin C
+(mg)|Vitamin B6
+(mg)|Thiamine (vitamin B1)
+(mg)|Riboflavin (vitamin B2)
+(mg)|Niacin, preformed
+(mg)|Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)|Fatty acids, total saturated
+(g)|Fatty acids, total monounsaturated 
+(g)|Fatty acids, total polyunsaturated
+(g)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+03_001,"Bambara groundnut, dry, raw",Vigna subterranea,2,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin C
+(mg)"
+03_012,"Bambara groundnut, not soaked, boiled* (without salt), drained",Vigna subterranea,2,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin C
+(mg)"
+03_068,"Bambara groundnut, soaked, boiled in different water* (without salt), drained",Vigna subterranea,2,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin C
+(mg)"
+03_013,"Bambara groundnut, black white-eye, dry, raw (Ghana), n=1",Vigna subterranea,2,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin C
+(mg)"
+03_014,"Bambara groundnut, brown white-eye, dry, raw (Ghana), n=1",Vigna subterranea,2,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin C
+(mg)"
+03_015,"Bambara groundnut, cream black-eye, dry, raw (Ghana), n=1",Vigna subterranea,2,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin C
+(mg)"
+03_016,"Bambara groundnut, cream pink-eye, dry, raw (Ghana), n=1",Vigna subterranea,2,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin C
+(mg)"
+03_017,"Bambara groundnut, maroon white-eye, dry, raw (Ghana), n=1",Vigna subterranea,2,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin C
+(mg)"
+03_018,"Bambara groundnut, combined varieties, dry, raw (Ghana)",Vigna subterranea,2,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin C
+(mg)"
+03_019,"Bambara groundnut, combined varieties (Ghana), not soaked, boiled* (without salt), drained",Vigna subterranea,2,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin C
+(mg)"
+03_071,"Bambara groundnut, combined varieties (Ghana), soaked, boiled in different water* (without salt), drained",Vigna subterranea,2,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin C
+(mg)"
+03_002,"Bambara groundnut, red, dry, raw",Vigna subterranea,2,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin C
+(mg)"
+03_020,"Bambara groundnut, red, not soaked, boiled* (without salt), drained",Vigna subterranea,2,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin C
+(mg)"
+03_074,"Bambara groundnut, red, soaked, boiled in different water* (without salt), drained",Vigna subterranea,2,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin C
+(mg)"
+03_003,"Bambara groundnut, white, dry, raw",Vigna subterranea,2,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin C
+(mg)"
+03_021,"Bambara groundnut, white, not soaked, boiled* (without salt), drained",Vigna subterranea,2,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin C
+(mg)"
+03_077,"Bambara groundnut, white, soaked, boiled in different water* (without salt), drained",Vigna subterranea,2,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin C
+(mg)"
+03_058,"Lima bean, dry, raw",Phaseolus lunatus,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+03_117,"Lima bean, not soaked, boiled* (without salt), drained",Phaseolus lunatus,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+03_118,"Lima bean, not soaked, boiled* (without salt), with cooking liquid",Phaseolus lunatus,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+03_119,"Lima bean, soaked, boiled in different water* (without salt), drained",Phaseolus lunatus,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+03_120,"Lima bean, soaked, boiled in different water* (without salt), with cooking liquid",Phaseolus lunatus,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+03_008,"Soya bean, dry, raw",Glycine max,1,"Vitamin C
+(mg)"
+03_034,"Soya bean, not soaked, boiled* (without salt), drained",Glycine max,1,"Vitamin C
+(mg)"
+03_136,"Soya bean, soaked, boiled in different water* (without salt), drained",Glycine max,1,"Vitamin C
+(mg)"
+03_036,"Soya bean, Anidaso variety, dry, raw (Ghana), n=1",Glycine max,1,"Vitamin C
+(mg)"
+03_038,"Soya bean, Jenguma variety, dry, raw (Ghana), n=1",Glycine max,1,"Vitamin C
+(mg)"
+03_037,"Soya bean, Quarshie variety, dry, raw (Ghana), n=1",Glycine max,1,"Vitamin C
+(mg)"
+03_035,"Soya bean, Salintuya-1 variety, dry, raw (Ghana), n=1",Glycine max,1,"Vitamin C
+(mg)"
+03_039,"Soya bean, combined varieties, dry, raw (Ghana)",Glycine max,1,"Vitamin C
+(mg)"
+03_040,"Soya bean, combined varieties (Ghana), not soaked, boiled* (without salt), drained",Glycine max,1,"Vitamin C
+(mg)"
+03_137,"Soya bean, combined varieties (Ghana), soaked, boiled in different water* (without salt), drained",Glycine max,1,"Vitamin C
+(mg)"
+03_059,"Velvet bean, dry, raw",Mucuna pruriens,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+03_138,"Velvet bean, not soaked, boiled* (without salt), drained",Mucuna pruriens,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+03_139,"Velvet bean, not soaked, boiled* (without salt), with cooking liquid",Mucuna pruriens,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+03_140,"Velvet bean, soaked, boiled in different water* (without salt), drained",Mucuna pruriens,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+03_141,"Velvet bean, soaked, boiled in different water* (without salt), with cooking liquid",Mucuna pruriens,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+04_002,"Baobab, leaves, dried",Adansonia digitata,1,"Niacin, preformed
+(mg)"
+04_081,"Bay, leaves, dried",Laurus nobilis,2,"Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+04_005,"Cabbage, white, raw",Brassica oleracea var. capitata,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+04_090,"Cabbage, white, boiled* (as part of a recipe)",Brassica oleracea var. capitata,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+04_089,"Cabbage, white, boiled* (without salt), drained",Brassica oleracea var. capitata,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+04_083,"Thyme, dried",Brassica nigra,2,"Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+05_055,"African black plum/chocolate berry, ripe, raw",Vitex doniana,8,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin B6
+(mg)|Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)|Fatty acids, total saturated
+(g)|Fatty acids, total monounsaturated 
+(g)|Fatty acids, total polyunsaturated
+(g)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+05_023,"African fan palm, fruit, raw",Borassus aethiopum,1,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)"
+05_024,"African locust bean, flour from fruit",Parkia biglobosa,7,"Vitamin B6
+(mg)|Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)|Fatty acids, total saturated
+(g)|Fatty acids, total monounsaturated 
+(g)|Fatty acids, total polyunsaturated
+(g)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+05_001,"African locust bean, fruit, raw",Parkia biglobosa,7,"Vitamin B6
+(mg)|Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)|Fatty acids, total saturated
+(g)|Fatty acids, total monounsaturated 
+(g)|Fatty acids, total polyunsaturated
+(g)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+05_053,"African star apple, fruit, raw",Chrysophyllum albidum,6,"Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)|Fatty acids, total saturated
+(g)|Fatty acids, total monounsaturated 
+(g)|Fatty acids, total polyunsaturated
+(g)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+05_025,"Akee, fruit, raw",Blighia sapida,8,"Sodium
+(mg)|Zinc
+(mg)|Copper
+(mg)|Fatty acids, total saturated
+(g)|Fatty acids, total monounsaturated 
+(g)|Fatty acids, total polyunsaturated
+(g)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+05_004,"Baobab, fruit/monkey bread, raw",Adansonia digitata,5,"Fatty acids, total saturated
+(g)|Fatty acids, total monounsaturated 
+(g)|Fatty acids, total polyunsaturated
+(g)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+05_006,"Cashew apple, fruit, raw",Anacardium occidentale,7,"Vitamin B6
+(mg)|Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)|Fatty acids, total saturated
+(g)|Fatty acids, total monounsaturated 
+(g)|Fatty acids, total polyunsaturated
+(g)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+05_030,"Date, soft, raw",Phoenix dactylifera,2,"Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+05_007,"Dattock, fruit, raw",Detarium senegalense,2,"Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+05_011,"Gumvine, fruit, raw",Saba senegalensis,10,"Potassium
+(mg)|Sodium
+(mg)|Zinc
+(mg)|Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)|Fatty acids, total saturated
+(g)|Fatty acids, total monounsaturated 
+(g)|Fatty acids, total polyunsaturated
+(g)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+05_013,"Landolphia, fruit, raw",Landolphia spp.,7,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)|Fatty acids, total saturated
+(g)|Fatty acids, total monounsaturated 
+(g)|Fatty acids, total polyunsaturated
+(g)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+05_037,"Mango, pale flesh, raw",Mangifera indica,1,"Sodium
+(mg)"
+05_052,"Mombin/hog-plum, fruit, raw",Spondias mombin,7,"Vitamin B6
+(mg)|Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)|Fatty acids, total saturated
+(g)|Fatty acids, total monounsaturated 
+(g)|Fatty acids, total polyunsaturated
+(g)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+05_040,"Oil palm, fruit, raw",Elaeis guineensis,2,"Vitamin B6
+(mg)|Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)"
+05_044,"Shea, fruit, raw",Vitellaria paradoxa,7,"Vitamin B6
+(mg)|Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)|Fatty acids, total saturated
+(g)|Fatty acids, total monounsaturated 
+(g)|Fatty acids, total polyunsaturated
+(g)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+05_019,"Soapberry, fruit, raw",Lepisanthes senegalensis,11,"Potassium
+(mg)|Sodium
+(mg)|Zinc
+(mg)|Vitamin B6
+(mg)|Niacin, preformed
+(mg)|Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)|Fatty acids, total saturated
+(g)|Fatty acids, total monounsaturated 
+(g)|Fatty acids, total polyunsaturated
+(g)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+06_006,"Coconut milk, fresh or canned",Cocos nucifera ,1,"Riboflavin (vitamin B2)
+(mg)"
+06_008,"Dikanut, kernel, dried, raw",Irvingia gabonensis,5,"Fatty acids, total saturated
+(g)|Fatty acids, total monounsaturated 
+(g)|Fatty acids, total polyunsaturated
+(g)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+06_009,"False sesame seeds, dried, raw",Ceratotheca sesamoides,5,"Fatty acids, total saturated
+(g)|Fatty acids, total monounsaturated 
+(g)|Fatty acids, total polyunsaturated
+(g)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+06_030,"Hibiscus seed, red, dried, raw",Hibiscus sabdariffa ,5,"Fatty acids, total saturated
+(g)|Fatty acids, total monounsaturated 
+(g)|Fatty acids, total polyunsaturated
+(g)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+07_008,"Ant, flying, dried",Various species,3,"Vitamin B12
+(mcg)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+07_026,"Bamboo caterpillar, deep fried, salted",Omphisa fuscidentalis,19,"net_carbs
+(g)|Fibre, total dietary or [fibre, crude]
+(g)|Magnesium
+(mg)|Zinc
+(mg)|Copper
+(mg)|Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin C
+(mg)|Vitamin D 
+(mcg)|Vitamin B12
+(mcg)|Vitamin B6
+(mg)|Thiamine (vitamin B1)
+(mg)|Riboflavin (vitamin B2)
+(mg)|Niacin, preformed
+(mg)|Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)|Fatty acids, total saturated
+(g)|Fatty acids, total monounsaturated 
+(g)|Fatty acids, total polyunsaturated
+(g)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+07_025,"Beef, corned beef, canned",Bos taurus,1,"Thiamine (vitamin B1)
+(mg)"
+07_075,"Cricket, dried, raw",Various species,1,"Vitamin D 
+(mcg)"
+07_074,"Cricket, fresh, raw",Various species,1,"Vitamin D 
+(mcg)"
+07_076,"Cricket, bush (katydid), raw",Ruspolia differens,5,"Vitamin C
+(mg)|Vitamin D 
+(mcg)|Vitamin B12
+(mcg)|Vitamin B6
+(mg)|Thiamine (vitamin B1)
+(mg)"
+07_044,"Crocodile meat, raw",Crocodylus  spp.,2,"Copper
+(mg)|Vitamin D 
+(mcg)"
+07_045,"Crocodile meat, boiled* (without salt), drained",Crocodylus  spp.,2,"Copper
+(mg)|Vitamin D 
+(mcg)"
+07_110,"Crocodile meat, grilled* (without salt or fat)",Crocodylus  spp.,2,"Copper
+(mg)|Vitamin D 
+(mcg)"
+07_111,"Crocodile meat, stewed* (as part of a recipe)",Crocodylus  spp.,2,"Copper
+(mg)|Vitamin D 
+(mcg)"
+07_079,"Larvae, fresh, raw",Various species,8,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin D 
+(mcg)|Vitamin B6
+(mg)|Fatty acids, total saturated
+(g)|Fatty acids, total monounsaturated 
+(g)|Fatty acids, total polyunsaturated
+(g)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+07_056,"Mopane worm, canned",Gonimbrasia belina,10,"Vitamin A (expressed in retinol activity equivalents)
+(mcg)|Vitamin D 
+(mcg)|Vitamin B12
+(mcg)|Vitamin B6
+(mg)|Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)|Fatty acids, total saturated
+(g)|Fatty acids, total monounsaturated 
+(g)|Fatty acids, total polyunsaturated
+(g)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+07_067,"Ostrich meat, raw",Struthio camelus,1,"Vitamin D 
+(mcg)"
+07_099,"Ostrich meat, boiled* (without salt), drained",Struthio camelus,1,"Vitamin D 
+(mcg)"
+07_100,"Ostrich meat, grilled* (without salt or fat)",Struthio camelus,1,"Vitamin D 
+(mcg)"
+07_101,"Ostrich meat, stewed* (as part of a recipe)",Struthio camelus,1,"Vitamin D 
+(mcg)"
+07_066,"Springbok meat, raw",Antidorcas marsupialis,1,"Vitamin D 
+(mcg)"
+07_096,"Springbok meat, boiled* (without salt), drained",Antidorcas marsupialis,1,"Vitamin D 
+(mcg)"
+07_097,"Springbok meat, grilled* (without salt or fat)",Antidorcas marsupialis,1,"Vitamin D 
+(mcg)"
+07_098,"Springbok meat, stewed* (as part of a recipe)",Antidorcas marsupialis,1,"Vitamin D 
+(mcg)"
+07_082,"Termite, dried, raw",Macrotermes spp.,3,"Vitamin B12
+(mcg)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+07_081,"Termite, fresh, raw",Various species,3,"Vitamin B12
+(mcg)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+08_007,"Egg, turkey, raw",Meleagris gallopavo,1,"Niacin, preformed
+(mg)"
+08_012,"Egg, turkey, boiled* (without salt)",Meleagris gallopavo,1,"Niacin, preformed
+(mg)"
+09_007,"African carp, fillet, raw",Labeo spp.,1,"Thiamine (vitamin B1)
+(mg)"
+09_061,"African carp, fillet, boiled* (as part of a recipe)",Labeo spp.,1,"Thiamine (vitamin B1)
+(mg)"
+09_009,"African carp, fillet, grilled* (without salt or fat)",Labeo spp.,1,"Thiamine (vitamin B1)
+(mg)"
+09_008,"African carp, fillet, steamed* (without salt)",Labeo spp.,1,"Thiamine (vitamin B1)
+(mg)"
+09_109,"Mackerel, jack, canned in oil, drained",Trachurus symmetricus,2,"Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+09_032,"Perch, Nile, fillet, raw",Lates niloticus,1,"Alpha-linolenic acid
+(g)"
+09_086,"Perch, Nile, fillet, boiled* (as part of a recipe)",Lates niloticus,1,"Alpha-linolenic acid
+(g)"
+09_034,"Perch, Nile, fillet, grilled* (without salt or fat)",Lates niloticus,1,"Alpha-linolenic acid
+(g)"
+09_033,"Perch, Nile, fillet, steamed* (without salt)",Lates niloticus,1,"Alpha-linolenic acid
+(g)"
+10_019,"Breastmilk, colostrum",,3,"Vitamin D 
+(mcg)|Vitamin B6
+(mg)|Thiamine (vitamin B1)
+(mg)"
+10_011,"Infant formula, powder, for 3 months, fortified",,2,"Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+10_012,"Infant formula, powder, for 6 months, fortified",,2,"Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+10_018,"Milk, camel, fresh",Camelus dromedarius ,6,"Vitamin D 
+(mcg)|Vitamin B12
+(mcg)|Vitamin B6
+(mg)|Thiamine (vitamin B1)
+(mg)|Niacin, preformed
+(mg)|Folate, total or [folate, sum of vitamers] (vitamin B9)
+(mcg)"
+10_015,"Milk, cow, canned, condensed, sweetened",,1,"Vitamin D 
+(mcg)"
+10_016,"Milk, cow, canned, evaporated",,1,"Vitamin D 
+(mcg)"
+10_017,"Milk, cow, powder, skimmed, unfortified",,1,"Vitamin D 
+(mcg)"
+10_002,"Milk, cow, powder, whole, unfortified",,1,"Vitamin D 
+(mcg)"
+10_013,"Milk, cow, reduced fat, 1.5–2% fat",Bos taurus,1,"Vitamin D 
+(mcg)"
+10_014,"Milk, cow, skimmed, 0.5% fat",Bos taurus,2,"Iron
+(mg)|Vitamin D 
+(mcg)"
+10_022,"Milk, cow, whole, fermented",,1,"Niacin, preformed
+(mg)"
+11_011,"Butter, from cow’s milk, salted",,1,"Iron
+(mg)"
+11_001,"Butter, from cow’s milk, unsalted",,1,"Iron
+(mg)"
+11_013,"Corn (maize) oil, unfortified",Zea mays,1,"Iron
+(mg)"
+11_033,"Corn (maize) oil, fortified with vitamin A, 600–1000 mcg/100g (Ghana, Nigeria, Sierra Leone)",Zea mays,1,"Iron
+(mg)"
+11_032,"Corn (maize) oil, fortified with vitamin A, 1100–2400 mcg/100g (Benin, Burkina Faso, Côte d’Ivoire, Guinea, Guinea-Bissau, Liberia, Mali, Niger, Senegal, Togo)",Zea mays,1,"Iron
+(mg)"
+11_029,"Margarine, fortified with vitamin A and D (Nigeria)",,1,"Iron
+(mg)"
+11_006,"Margarine, fortified with vitamin A",,1,"Iron
+(mg)"
+11_008,"Shea butter, white",Butyrospermum parkii,2,"Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+11_016,"Sunflower oil, unfortified",Helianthus annuus,1,"Iron
+(mg)"
+11_035,"Sunflower oil, fortified with vitamin A, 600–1000 mcg/100g (Ghana, Nigeria, Sierra Leone)",Helianthus annuus,1,"Iron
+(mg)"
+11_034,"Sunflower oil, fortified with vitamin A, 1100–2400 mcg/100g (Benin, Burkina Faso, Côte d’Ivoire, Guinea, Guinea-Bissau, Liberia, Mali, Niger, Senegal, Togo)",Helianthus annuus,1,"Iron
+(mg)"
+11_015,"Oil, from cow’s milk butter (ghee)",,1,"Vitamin B6
+(mg)"
+11_010,"Vegetable oil, unfortified",,1,"Iron
+(mg)"
+11_031,"Vegetable oil, fortified with vitamin A, 600–1000 mcg/100g (Ghana, Nigeria, Sierra Leone)",,1,"Iron
+(mg)"
+11_030,"Vegetable oil, fortified with vitamin A, 1100–2400 mcg/100g (Benin, Burkina Faso, Côte d’Ivoire, Guinea, Guinea-Bissau, Liberia, Mali, Niger, Senegal, Togo)",,1,"Iron
+(mg)"
+12_001,"Beer, European (4.6% v/v alcohol)",,2,"Iron
+(mg)|Vitamin B12
+(mcg)"
+12_020,"Beer, European (>6% v/v alcohol)",,2,"Calcium
+(mg)|Iron
+(mg)"
+12_002,"Beer, maize (ca. 3% v/v alcohol)",,1,"Vitamin B12
+(mcg)"
+12_003,"Beer, millet (ca. 3% v/v alcohol)",,1,"Vitamin B12
+(mcg)"
+12_004,"Beer, sorghum (ca. 3% v/v alcohol)",,1,"Vitamin B12
+(mcg)"
+12_024,"Carbonated drink (e.g. Coca-Cola, Sprite)",,4,"Protein, total
+(g)|Niacin, preformed
+(mg)|Linoleic acid 
+(g)|Alpha-linolenic acid
+(g)"
+12_014,"Nectar, mango, canned",,2,"Thiamine (vitamin B1)
+(mg)|Riboflavin (vitamin B2)
+(mg)"
+12_008,"Tea, infusion",,1,"Vitamin B6
+(mg)"
+12_019,"Water, tap",,2,"Iron
+(mg)|Zinc
+(mg)"

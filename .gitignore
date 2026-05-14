@@ -9,3 +9,7 @@ data/.DS_Store
 .env
 
 outputs/.matplotlib/
+node_modules/
+dist/
+dashboard/node_modules/
+dashboard/dist/

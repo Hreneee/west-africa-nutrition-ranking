@@ -1,0 +1,20 @@
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+export default defineConfig({
+  plugins: [react()],
+  base: "./",
+  build: {
+    chunkSizeWarningLimit: 650,
+    cssCodeSplit: true,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes("node_modules/recharts")) return "charts";
+          if (id.includes("node_modules")) return "vendor";
+          if (id.includes("sampleDashboardData")) return "dashboard-data";
+        },
+      },
+    },
+  },
+});

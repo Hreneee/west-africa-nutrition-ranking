@@ -116,6 +116,49 @@ Decimal thresholds also work:
 
 After running a non-default threshold for testing, rerun the default command if you want the outputs on disk to reflect the default 10% state.
 
+## Interactive Dashboard Prototype
+
+A polished one-page React + TypeScript + Vite dashboard prototype is available in:
+
+```text
+dashboard/
+```
+
+It demonstrates how the research pipeline could be translated into a public-facing decision-support interface. The prototype includes KPI cards, search and filter controls, score and literature-signal charts, a searchable results table, and interpretation notes.
+
+The dashboard currently uses realistic sample records in:
+
+```text
+dashboard/src/data/sampleDashboardData.ts
+```
+
+The sample data is intentionally isolated so it can be replaced later with parsed CSV/JSON exports from the real pipeline.
+
+Run locally:
+
+```bash
+cd dashboard
+npm install
+npm run dev
+```
+
+Build for deployment:
+
+```bash
+cd dashboard
+npm run build
+npm run preview
+```
+
+Deploy to GitHub Pages with the included `gh-pages` script:
+
+```bash
+cd dashboard
+npm run deploy
+```
+
+The dashboard uses `base: "./"` in `dashboard/vite.config.ts`, which keeps the build portable for GitHub Pages project hosting.
+
 ## Pipeline Order
 
 The full pipeline is implemented in:

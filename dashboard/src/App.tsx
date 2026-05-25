@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import type { CSSProperties } from "react";
 import {
   Bar,
   BarChart,
@@ -14,11 +15,90 @@ import type { DashboardSummary, FoodRecord, NutrientSignal } from "./data/sample
 import westAfricaMapUrl from "./assets/west-africa-map.svg";
 
 type ScoreFilter = "All" | "high" | "moderate" | "lower";
+type DirectionalityMode = "weighted" | "desirable" | "undesirable";
+type SortKey = "rank" | "food" | "score" | "evidence";
+
 type DashboardData = {
   dashboardSummary: DashboardSummary;
   foodRecords: FoodRecord[];
   nutrientSignals: NutrientSignal[];
 };
+
+const metadata = [
+  { label: "WAFCT entries screened", value: "1,028" },
+  { label: "Foods ranked", value: "834" },
+  { label: "Nutrients retained", value: "17" },
+  { label: "Missingness threshold", value: "<=10%" },
+  { label: "PubMed corpus", value: "675 abstracts" },
+  { label: "Ranking method", value: "TOPSIS MCDA" },
+];
+
+const workflowStreams = [
+  {
+    label: "Food composition stream",
+    items: [
+      "FAO/INFOODS WAFCT input",
+      "Eligibility screening",
+      "Net carbohydrate derivation",
+      "Complete-case filtering",
+      "Retained nutrient matrix",
+    ],
+  },
+  {
+    label: "Literature signal stream",
+    items: [
+      "Cached PubMed titles/abstracts",
+      "Deficiency-language scan",
+      "Nutrient co-occurrence counts",
+      "Literature-derived weights",
+      "Directionality assignment",
+    ],
+  },
+];
+
+const convergenceSteps = [
+  "Weighted normalization",
+  "Ideal / worst-case profiles",
+  "TOPSIS proximity score",
+  "Post-hoc RDI interpretation",
+  "Ranked candidate-food outputs",
+];
+
+const scoreDistribution = [
+  { bin: "0.00-0.04", foods: 182 },
+  { bin: "0.04-0.08", foods: 347 },
+  { bin: "0.08-0.12", foods: 171 },
+  { bin: "0.12-0.20", foods: 84 },
+  { bin: "0.20-0.40", foods: 41 },
+  { bin: "0.40-0.60", foods: 6 },
+  { bin: "0.60-0.80", foods: 3 },
+];
+
+const rdiNutrients = ["Iron", "Vitamin A", "Copper", "Folate", "Vitamin B12", "Magnesium"];
+const rdiCoverage = [
+  { food: "Carrot, boiled", values: [18, 115, 8, 6, 0, 3] },
+  { food: "Onion, boiled", values: [22, 0, 19, 5, 0, 4] },
+  { food: "Jute mallow leaves", values: [41, 18, 21, 29, 0, 24] },
+  { food: "Benniseed, raw", values: [35, 0, 56, 21, 0, 82] },
+  { food: "Cowpea leaves", values: [38, 16, 45, 36, 0, 31] },
+  { food: "Fonio, raw", values: [28, 0, 18, 13, 0, 35] },
+  { food: "Shrimp, dried", values: [7, 0, 63, 3, 88, 14] },
+  { food: "Beef liver", values: [36, 245, 980, 58, 2500, 6] },
+];
+
+const assumptions = [
+  { term: "Complete-case filtering", detail: "Foods with missing retained nutrient values are removed after the <=10% nutrient missingness rule." },
+  { term: "No imputation", detail: "Missing nutrient values are not imputed before ranking to avoid artificial nutrient profiles." },
+  { term: "Nutrient directionality", detail: "Beneficial nutrients are rewarded at higher values; sodium, saturated fat, and related nutrients are treated as lower-is-better." },
+  { term: "Literature-derived weights", detail: "Weights are normalized from deficiency-related nutrient co-occurrence in PubMed titles and abstracts." },
+  { term: "Comparative score", detail: "A TOPSIS score is relative to the constructed ideal and worst-case profiles, not an absolute dietary recommendation." },
+];
+
+const limitations = [
+  "PubMed co-occurrence does not assess study quality, effect sizes, causality, or deficiency prevalence.",
+  "The current model uses nutrient values per 100 g and does not yet encode serving size, cost, seasonality, food safety, bioavailability, or cultural dietary patterns.",
+  "The dashboard is a decision-support artifact for inspection and expert review, not a finalized recommendation system.",
+];
 
 const scoreFormatter = (value: number) => value.toFixed(3);
 const percentFormatter = (value: number) => `${value.toFixed(1)}%`;
@@ -31,123 +111,25 @@ function uniqueSorted<T extends string>(values: T[]) {
   return Array.from(new Set(values)).sort((a, b) => a.localeCompare(b));
 }
 
-function IconBowl() {
-  return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10h14c-.4 5-3.1 8-7 8s-6.6-3-7-8Z"/><path d="M7 10a5 5 0 0 1 10 0"/><path d="M9 7c-.8-1.7.8-2.1 0-3.4M12 7c-.8-1.7.8-2.1 0-3.4M15 7c-.8-1.7.8-2.1 0-3.4"/></svg>;
-}
-function IconLeaf() {
-  return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4C12.5 4.3 6.8 8.3 5 16c6.8-.1 11.5-4.5 15-12Z"/><path d="M5 16c2.8-3.5 6.2-5.8 10.2-7"/></svg>;
-}
-function IconDoc() {
-  return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l3 3v15H6V3Z"/><path d="M15 3v4h4M9 11h6M9 15h6"/></svg>;
-}
-function IconBars() {
-  return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V10h3v10H5ZM11 20V5h3v15h-3ZM17 20v-8h3v8h-3Z"/></svg>;
-}
-function IconStar() {
-  return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"/></svg>;
-}
-function IconBook() {
-  return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A3.5 3.5 0 0 1 7.5 2H20v17H7.5A3.5 3.5 0 0 0 4 22V5.5Z"/><path d="M4 5.5A3.5 3.5 0 0 1 7.5 9H20"/></svg>;
-}
-function IconScale() {
-  return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 6h14M7 6l-4 7h8L7 6ZM17 6l-4 7h8l-4-7Z"/><path d="M8 21h8"/></svg>;
-}
-function IconUsers() {
-  return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M5 21a7 7 0 0 1 14 0M4 10a3 3 0 0 0 3 3M20 10a3 3 0 0 1-3 3"/></svg>;
-}
-function IconHeart() {
-  return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 5.6a5.1 5.1 0 0 0-7.2 0L12 7.2l-1.6-1.6a5.1 5.1 0 1 0-7.2 7.2L12 21l8.8-8.2a5.1 5.1 0 0 0 0-7.2Z"/><path d="M7 12h3l1-2 2 5 1.2-3H17"/></svg>;
+function SignalValueLabel(props: { x?: number; y?: number; width?: number; value?: number; index?: number }) {
+  const { x = 0, y = 0, width = 0, value = 0, index = 0 } = props;
+  const label = index === 0 ? `${percentFormatter(value)} / dominant signal` : percentFormatter(value);
+  return (
+    <text x={x + width + 8} y={y + 10} className="bar-label">
+      {label}
+    </text>
+  );
 }
 
 function HeroVisual() {
   return (
-    <aside className="hero-visual map-visual" aria-label="Map of West Africa">
-      <img src={westAfricaMapUrl} alt="Map of West Africa with the region highlighted" />
-      <p>West Africa regional scope</p>
+    <aside className="map-panel" aria-label="West Africa analytical region">
+      <img src={westAfricaMapUrl} alt="Map outline of West Africa" />
+      <div>
+        <span>Regional scope</span>
+        <strong>West Africa Food Composition Table</strong>
+      </div>
     </aside>
-  );
-}
-
-function HeroAccentField() {
-  return (
-    <svg className="hero-accent-field" viewBox="0 0 980 330" aria-hidden="true">
-      <g className="accent-depth accent-depth-back">
-        <g className="hero-food-glyph hero-glyph-leaf" transform="translate(34 236) scale(.82) rotate(-12)">
-          <path d="M13-13C-2-12-13-4-17 12-2 11 8 3 13-13Z" />
-          <path d="M-17 12C-10 2-2-5 8-9" />
-        </g>
-        <g className="hero-food-glyph hero-glyph-signal" transform="translate(108 178) scale(.72)">
-          <path d="M-10 10V1h5v9h-5ZM-2 10v-18h5v18h-5ZM6 10V-2h5v12H6Z" />
-        </g>
-        <g className="hero-food-glyph hero-glyph-bowl" transform="translate(248 304) scale(.7)">
-          <path d="M-14 2h28c-1 12-6 18-14 18S-13 14-14 2Z" />
-          <path d="M-8 2a8 8 0 0 1 16 0" />
-        </g>
-        <g className="hero-food-glyph hero-glyph-root" transform="translate(556 272) scale(.68) rotate(-16)">
-          <path d="M-5-10c8 4 13 12 10 21-2 6-8 8-12 4-5-4-3-11 2-25Z" />
-          <path d="M-5-10c-5-3-10-2-14 2M-5-10c-2-5 1-9 5-12M-5-10c3-4 8-5 13-3" />
-        </g>
-      </g>
-      <g className="accent-depth accent-depth-mid">
-        <g className="hero-food-glyph hero-glyph-leaf" transform="translate(92 256) scale(.9)">
-          <path d="M13-13C-2-12-13-4-17 12-2 11 8 3 13-13Z" />
-          <path d="M-17 12C-10 2-2-5 8-9" />
-        </g>
-        <g className="hero-food-glyph hero-glyph-signal" transform="translate(170 220) scale(.9)">
-          <path d="M-10 10V1h5v9h-5ZM-2 10v-18h5v18h-5ZM6 10V-2h5v12H6Z" />
-        </g>
-        <g className="hero-food-glyph hero-glyph-bowl" transform="translate(286 246) scale(.84)">
-          <path d="M-14 2h28c-1 12-6 18-14 18S-13 14-14 2Z" />
-          <path d="M-8 2a8 8 0 0 1 16 0" />
-          <path d="M-5-4c-2-4 2-5 0-8M0-4c-2-4 2-5 0-8M5-4c-2-4 2-5 0-8" />
-        </g>
-        <g className="hero-food-glyph hero-glyph-root" transform="translate(398 196) scale(.82)">
-          <path d="M-5-10c8 4 13 12 10 21-2 6-8 8-12 4-5-4-3-11 2-25Z" />
-          <path d="M-5-10c-5-3-10-2-14 2M-5-10c-2-5 1-9 5-12M-5-10c3-4 8-5 13-3" />
-        </g>
-        <g className="hero-food-glyph hero-glyph-leaf" transform="translate(520 152) scale(.92) rotate(-18)">
-          <path d="M12-12C-3-10-12-3-16 12-2 11 8 3 12-12Z" />
-          <path d="M-16 12C-9 3-2-4 8-8" />
-        </g>
-        <g className="hero-food-glyph hero-glyph-bowl" transform="translate(650 228) scale(.75)">
-          <path d="M-14 2h28c-1 12-6 18-14 18S-13 14-14 2Z" />
-          <path d="M-8 2a8 8 0 0 1 16 0" />
-        </g>
-        <g className="hero-food-glyph hero-glyph-signal" transform="translate(746 176) scale(.74)">
-          <path d="M-10 10V1h5v9h-5ZM-2 10v-18h5v18h-5ZM6 10V-2h5v12H6Z" />
-        </g>
-      </g>
-      <g className="accent-depth accent-depth-front">
-        <g className="hero-food-glyph hero-glyph-signal" transform="translate(46 286) scale(.72)">
-          <path d="M-10 10V1h5v9h-5ZM-2 10v-18h5v18h-5ZM6 10V-2h5v12H6Z" />
-        </g>
-        <g className="hero-food-glyph hero-glyph-root" transform="translate(722 278) scale(.72) rotate(12)">
-          <path d="M-5-10c8 4 13 12 10 21-2 6-8 8-12 4-5-4-3-11 2-25Z" />
-          <path d="M-5-10c-5-3-10-2-14 2M-5-10c-2-5 1-9 5-12M-5-10c3-4 8-5 13-3" />
-        </g>
-        <g className="hero-food-glyph hero-glyph-leaf" transform="translate(820 230) scale(.7) rotate(18)">
-          <path d="M13-13C-2-12-13-4-17 12-2 11 8 3 13-13Z" />
-          <path d="M-17 12C-10 2-2-5 8-9" />
-        </g>
-        <g className="hero-food-glyph hero-glyph-bowl" transform="translate(468 298) scale(.62)">
-          <path d="M-14 2h28c-1 12-6 18-14 18S-13 14-14 2Z" />
-          <path d="M-8 2a8 8 0 0 1 16 0" />
-        </g>
-        <circle className="hero-dot hero-dot-blue" cx="232" cy="276" r="4" />
-        <circle className="hero-dot hero-dot-teal" cx="470" cy="244" r="4" />
-        <circle className="hero-dot hero-dot-gold" cx="598" cy="306" r="4" />
-        <circle className="hero-dot hero-dot-coral" cx="810" cy="264" r="4" />
-      </g>
-    </svg>
-  );
-}
-
-function SignalValueLabel(props: { x?: number; y?: number; width?: number; value?: number; index?: number }) {
-  const { x = 0, y = 0, width = 0, value = 0, index = 0 } = props;
-  return (
-    <text x={x + width + 8} y={y + 11} className={index === 0 ? "bar-label bar-label-emphasis" : "bar-label"}>
-      {index === 0 ? `${percentFormatter(value)} • highest literature support` : percentFormatter(value)}
-    </text>
   );
 }
 
@@ -156,6 +138,8 @@ function App() {
   const [nutrientFilter, setNutrientFilter] = useState("All");
   const [scoreFilter, setScoreFilter] = useState<ScoreFilter>("All");
   const [categoryFilter, setCategoryFilter] = useState("All");
+  const [directionalityMode, setDirectionalityMode] = useState<DirectionalityMode>("weighted");
+  const [sortKey, setSortKey] = useState<SortKey>("rank");
   const [dashboardData, setDashboardData] = useState<DashboardData | null>(null);
 
   useEffect(() => {
@@ -180,13 +164,14 @@ function App() {
 
   const nutrients = useMemo(() => uniqueSorted(foodRecords.flatMap((record) => record.keyNutrients)), [foodRecords]);
   const categories = useMemo(() => uniqueSorted(foodRecords.map((record) => record.category)), [foodRecords]);
-  const mostSupportedSignal = nutrientSignals[0]?.nutrient || dashboardSummary?.mostSupportedSignal || "Iron";
 
   const resetFilters = () => {
     setDescriptionSearch("");
     setNutrientFilter("All");
     setScoreFilter("All");
     setCategoryFilter("All");
+    setDirectionalityMode("weighted");
+    setSortKey("rank");
   };
 
   const filteredFoods = useMemo(() => {
@@ -204,141 +189,234 @@ function App() {
           (scoreFilter === "lower" && record.finalScore < 0.4);
         return matchesSearch && matchesNutrient && matchesCategory && matchesScore;
       })
-      .sort((a, b) => a.rank - b.rank);
-  }, [categoryFilter, descriptionSearch, nutrientFilter, scoreFilter]);
+      .sort((a, b) => {
+        if (sortKey === "food") return a.food.localeCompare(b.food);
+        if (sortKey === "score") return b.finalScore - a.finalScore;
+        if (sortKey === "evidence") return a.evidenceStrength.localeCompare(b.evidenceStrength) || a.rank - b.rank;
+        return a.rank - b.rank;
+      });
+  }, [categoryFilter, descriptionSearch, foodRecords, nutrientFilter, scoreFilter, sortKey]);
 
-  const topFoods = filteredFoods.slice(0, 5);
-  const tableFoods = filteredFoods.slice(0, 8);
+  const topFoods = filteredFoods.slice(0, 8);
+  const tableFoods = filteredFoods.slice(0, 14);
   const maxScore = Math.max(1, ...foodRecords.map((record) => record.finalScore));
+  const mostSupportedSignal = nutrientSignals[0]?.nutrient || dashboardSummary?.mostSupportedSignal || "Iron";
 
-  const kpis = [
-    { label: "Foods analyzed", value: dashboardSummary ? dashboardSummary.foodsAnalyzed.toLocaleString() : "-", icon: <IconBowl /> },
-    { label: "Nutrients retained", value: dashboardSummary ? dashboardSummary.nutrientsRetained.toString() : "-", icon: <IconLeaf /> },
-    { label: "Research abstracts reviewed", value: dashboardSummary ? dashboardSummary.pubmedAbstractsScreened.toLocaleString() : "-", icon: <IconDoc /> },
-    { label: "Most-supported nutrient deficiency", value: mostSupportedSignal, icon: <IconBars /> },
-    { label: "Top-ranked food", value: "Carrot", icon: <IconStar /> },
-  ];
+  const displayedSignals = useMemo(() => {
+    if (directionalityMode === "desirable") return nutrientSignals.filter((signal) => signal.nutrient !== "Sodium" && signal.nutrient !== "Net carbs");
+    if (directionalityMode === "undesirable") return nutrientSignals.filter((signal) => signal.nutrient === "Sodium" || signal.nutrient === "Net carbs");
+    return nutrientSignals;
+  }, [directionalityMode, nutrientSignals]);
 
   return (
     <main className="app-shell">
-      <section
-        className="hero-grid"
-        aria-labelledby="dashboard-title"
-        onMouseMove={(event) => {
-          const rect = event.currentTarget.getBoundingClientRect();
-          event.currentTarget.style.setProperty("--hero-mx", `${(event.clientX - rect.left) / rect.width - 0.5}`);
-          event.currentTarget.style.setProperty("--hero-my", `${(event.clientY - rect.top) / rect.height - 0.5}`);
-        }}
-        onMouseLeave={(event) => {
-          event.currentTarget.style.setProperty("--hero-mx", "0");
-          event.currentTarget.style.setProperty("--hero-my", "0");
-        }}
-      >
-        <HeroAccentField />
+      <section className="hero-grid" aria-labelledby="dashboard-title">
         <div className="hero-copy">
-          <p className="eyebrow">Nutrition insights for West Africa</p>
-          <h1 id="dashboard-title">Finding the foods that matter most</h1>
-          <p className="hero-statement">This dashboard ranks West African foods using nutrient composition data and research evidence related to nutrient deficiencies.</p>
-          <p className="hero-problem">Focused on nutrient gaps involving iron, vitamin A, zinc, and related nutrients.</p>
+          <h1 id="dashboard-title">Text-Informed Nutritional Prioritization in West Africa</h1>
+          <p className="hero-statement">
+            Literature-weighted TOPSIS ranking of eligible WAFCT foods using deficiency-related PubMed signals.
+          </p>
+          <div className="hero-meta" aria-label="Default pipeline run metadata">
+            {metadata.map((item) => (
+              <div className="meta-item" key={item.label}>
+                <span>{item.label}</span>
+                <strong>{dashboardSummary && item.label === "Foods ranked" ? dashboardSummary.foodsAnalyzed.toLocaleString() : item.value}</strong>
+              </div>
+            ))}
+          </div>
         </div>
         <HeroVisual />
       </section>
 
-      <section className="kpi-grid" aria-label="Dashboard summary">
-        {kpis.map((kpi) => (
-          <article className="kpi-card" key={kpi.label}>
-            <div className="kpi-icon">{kpi.icon}</div>
-            <div>
-              <p className="kpi-label">{kpi.label}</p>
-              <p className="kpi-value">{kpi.value}</p>
-            </div>
+      <section className="summary-strip" aria-label="Current default run summary">
+        <div>
+          <span>Highest-ranked food</span>
+          <strong>{dashboardSummary?.highestRankedFood ?? "Carrot, boiled, drained"}</strong>
+        </div>
+        <div>
+          <span>Most-supported literature signal</span>
+          <strong>{mostSupportedSignal}</strong>
+        </div>
+        <div>
+          <span>Eligibility exclusions</span>
+          <strong>26 excluded / 2 review flags</strong>
+        </div>
+        <div>
+          <span>Score distribution</span>
+          <strong>Mean 0.089 / median 0.071</strong>
+        </div>
+      </section>
+
+      <section className="pipeline-section" aria-labelledby="pipeline-title">
+        <div className="section-heading">
+          <p className="eyebrow">A pipeline built around two questions</p>
+          <h2 id="pipeline-title">From food composition data and biomedical text to candidate-food ranking</h2>
+          <p>
+            The framework first determines which WAFCT foods can be responsibly ranked, then estimates which nutrients should receive
+            greater model weight from deficiency-related biomedical literature.
+          </p>
+        </div>
+        <div className="pipeline-grid">
+          {workflowStreams.map((stream) => (
+            <article className="stream-panel" key={stream.label}>
+              <h3>{stream.label}</h3>
+              <ol>
+                {stream.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ol>
+            </article>
+          ))}
+          <article className="convergence-panel">
+            <h3>Model convergence</h3>
+            <ol>
+              {convergenceSteps.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ol>
           </article>
-        ))}
+        </div>
       </section>
 
       <section className="analytical-workspace" aria-labelledby="controls-title">
-        <section className="controls-card">
+        <section className="controls-panel">
           <div className="section-title-row">
             <div>
-              <h2 id="controls-title">Explore the data</h2>
+              <h2 id="controls-title">Inspection Controls</h2>
+              <p>Filter the candidate-food preview and switch between model and interpretive views.</p>
             </div>
+            <button className="reset-button" type="button" onClick={resetFilters}>
+              Reset
+            </button>
           </div>
           <div className="control-grid">
             <label>
               <span>Nutrient focus</span>
               <select value={nutrientFilter} onChange={(event) => setNutrientFilter(event.target.value)}>
-                <option value="All">Choose a nutrient...</option>
-                {nutrients.map((nutrient) => <option key={nutrient} value={nutrient}>{nutrient}</option>)}
+                <option value="All">All retained nutrients</option>
+                {nutrients.map((nutrient) => (
+                  <option key={nutrient} value={nutrient}>
+                    {nutrient}
+                  </option>
+                ))}
               </select>
             </label>
             <label>
-              <span>Priority score range</span>
+              <span>TOPSIS score band</span>
               <select value={scoreFilter} onChange={(event) => setScoreFilter(event.target.value as ScoreFilter)}>
                 <option value="All">All scores</option>
-                <option value="high">High priority (0.70+)</option>
-                <option value="moderate">Moderate priority (0.40-0.69)</option>
-                <option value="lower">Lower priority (&lt;0.40)</option>
+                <option value="high">High tail (&gt;=0.70)</option>
+                <option value="moderate">Upper middle (0.40-0.69)</option>
+                <option value="lower">Lower / middle (&lt;0.40)</option>
               </select>
             </label>
-            <label className="secondary-filter">
+            <label>
               <span>Food category</span>
               <select value={categoryFilter} onChange={(event) => setCategoryFilter(event.target.value)}>
                 <option value="All">All categories</option>
-                {categories.map((category) => <option key={category} value={category}>{category}</option>)}
+                {categories.map((category) => (
+                  <option key={category} value={category}>
+                    {category}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label>
+              <span>Sort table</span>
+              <select value={sortKey} onChange={(event) => setSortKey(event.target.value as SortKey)}>
+                <option value="rank">Rank ascending</option>
+                <option value="score">Score descending</option>
+                <option value="food">Food description</option>
+                <option value="evidence">Evidence strength</option>
               </select>
             </label>
             <label className="description-search">
-              <span>Search food description</span>
-              <input type="search" value={descriptionSearch} onChange={(event) => setDescriptionSearch(event.target.value)} placeholder="e.g., carrot, leaves, boiled, raw, dried" />
+              <span>Food description search</span>
+              <input
+                type="search"
+                value={descriptionSearch}
+                onChange={(event) => setDescriptionSearch(event.target.value)}
+                placeholder="carrot, leaves, liver, fonio"
+              />
             </label>
-            <button className="reset-button" type="button" onClick={resetFilters}>Reset filters</button>
+          </div>
+          <div className="toggle-row" aria-label="Analytical toggles">
+            {(["weighted", "desirable", "undesirable"] as DirectionalityMode[]).map((mode) => (
+              <button
+                className={directionalityMode === mode ? "toggle active" : "toggle"}
+                type="button"
+                key={mode}
+                onClick={() => setDirectionalityMode(mode)}
+              >
+                {mode === "weighted" ? "All weighted nutrients" : mode === "desirable" ? "Higher-is-better" : "Lower-is-better"}
+              </button>
+            ))}
           </div>
         </section>
 
-        <section className="main-grid" aria-label="Main dashboard visualizations">
+        <section className="main-grid" aria-label="Primary figures">
           <article className="panel-card priority-card">
             <div className="section-title-row compact">
               <div>
-                <h2>Top prioritized foods</h2>
-                <p>Higher scores indicate stronger overall priority.</p>
+                <h2>Top Complete-Case Foods</h2>
+                <p>Relative TOPSIS proximity score under the default literature-weighted model.</p>
               </div>
+              <span className="figure-label">Fig. 01</span>
             </div>
             {topFoods.length > 0 ? (
               <div className="ranked-list">
-                <div className="ranked-header"><span>Rank</span><span>Food</span><span>Priority score</span></div>
+                <div className="ranked-header">
+                  <span>Rank</span>
+                  <span>Food</span>
+                  <span>Score</span>
+                </div>
                 {topFoods.map((record) => (
-                  <div className={`ranked-row ${record.rank === 1 ? "top-row" : ""}`} key={record.id}>
+                  <div className="ranked-row" key={record.id}>
                     <span className="rank-number">{record.rank}</span>
                     <div className="food-summary">
                       <strong>{record.food}</strong>
-                      <small>{record.category}{record.rank === 1 ? " • highest overall priority" : ""}</small>
+                      <small>{record.category} / {record.keyNutrients.join(", ")}</small>
                     </div>
-                    <div className="score-bar-wrap"><div className="score-bar" style={{ width: `${Math.max(7, (record.finalScore / maxScore) * 100)}%` }} /></div>
+                    <div className="score-bar-wrap">
+                      <div className="score-bar" style={{ width: `${Math.max(4, (record.finalScore / maxScore) * 100)}%` }} />
+                    </div>
                     <span className="score-value">{scoreFormatter(record.finalScore)}</span>
                   </div>
                 ))}
               </div>
             ) : (
-              <div className="empty-state"><p>No foods match these filters. Try clearing the nutrient or category filter.</p><button type="button" onClick={resetFilters}>Reset filters</button></div>
+              <div className="empty-state">
+                <p>No foods match these filters.</p>
+                <button type="button" onClick={resetFilters}>Reset</button>
+              </div>
             )}
           </article>
 
           <article className="panel-card signal-card">
             <div className="section-title-row compact">
               <div>
-                <h2>Nutrient deficiency signals from literature</h2>
-                <p>Normalized support across reviewed abstracts.</p>
+                <h2>Literature Signal Distribution</h2>
+                <p>Normalized nutrient weights from deficiency-related PubMed co-occurrence.</p>
               </div>
+              <span className="figure-label">Fig. 02</span>
             </div>
             <div className="signal-chart" aria-label="Normalized nutrient literature support chart">
-              <ResponsiveContainer width="100%" height={318}>
-                <BarChart data={nutrientSignals} layout="vertical" margin={{ top: 2, right: 154, left: 42, bottom: 20 }} barCategoryGap={12}>
-                  <CartesianGrid strokeDasharray="2 2" horizontal={false} stroke="#eef4f6" />
-                  <XAxis type="number" domain={[0, 55]} tickFormatter={(value) => `${value}%`} tick={{ fontSize: 12, fill: "#07183a", fontFamily: "inherit" }} label={{ value: "Literature support (normalized %)", position: "insideBottom", offset: -8, style: { fill: "#07183a", fontSize: 12, fontFamily: "inherit" } }} />
-                  <YAxis dataKey="nutrient" type="category" tick={{ fontSize: 12, fill: "#07183a", fontFamily: "inherit" }} width={76} />
-                  <Tooltip formatter={(value: number) => [percentFormatter(value), "Literature support"]} />
-                  <Bar dataKey="supportPercent" radius={[0, 2, 2, 0]} barSize={12}>
-                    {nutrientSignals.map((signal, index) => <Cell key={signal.nutrient} fill={index === 0 ? "#EA7317" : "#FEC601"} />)}
+              <ResponsiveContainer width="100%" height={330}>
+                <BarChart data={displayedSignals} layout="vertical" margin={{ top: 2, right: 148, left: 40, bottom: 18 }} barCategoryGap={10}>
+                  <CartesianGrid strokeDasharray="1 3" horizontal={false} stroke="#d8d8d8" />
+                  <XAxis
+                    type="number"
+                    domain={[0, 55]}
+                    tickFormatter={(value) => `${value}%`}
+                    tick={{ fontSize: 11, fill: "#202020", fontFamily: "inherit" }}
+                    label={{ value: "Normalized weight (%)", position: "insideBottom", offset: -8, style: { fill: "#202020", fontSize: 11, fontFamily: "inherit" } }}
+                  />
+                  <YAxis dataKey="nutrient" type="category" tick={{ fontSize: 11, fill: "#202020", fontFamily: "inherit" }} width={76} />
+                  <Tooltip formatter={(value: number, _name, item) => [`${percentFormatter(value)}; n=${item.payload.supportCount}`, "Literature signal"]} />
+                  <Bar dataKey="supportPercent" radius={0} barSize={12}>
+                    {displayedSignals.map((signal, index) => (
+                      <Cell key={signal.nutrient} fill={index === 0 ? "#1f5fbf" : "#666666"} />
+                    ))}
                     <LabelList dataKey="supportPercent" content={<SignalValueLabel />} />
                   </Bar>
                 </BarChart>
@@ -347,37 +425,134 @@ function App() {
           </article>
         </section>
 
+        <section className="distribution-grid" aria-label="Secondary analytical figures">
+          <article className="panel-card">
+            <div className="section-title-row compact">
+              <div>
+                <h2>TOPSIS Score Distribution</h2>
+                <p>TOPSIS ranks foods by closeness to the weighted ideal profile and distance from the worst-case profile after normalization.</p>
+              </div>
+              <span className="figure-label">Fig. 03</span>
+            </div>
+            <ResponsiveContainer width="100%" height={236}>
+              <BarChart data={scoreDistribution} margin={{ top: 4, right: 12, left: 0, bottom: 24 }}>
+                <CartesianGrid vertical={false} stroke="#dedede" strokeDasharray="1 3" />
+                <XAxis dataKey="bin" tick={{ fontSize: 10, fill: "#202020" }} interval={0} angle={-28} textAnchor="end" height={52} />
+                <YAxis tick={{ fontSize: 11, fill: "#202020" }} width={42} />
+                <Tooltip formatter={(value: number) => [value, "Foods"]} />
+                <Bar dataKey="foods" fill="#111111" radius={0} barSize={24} />
+              </BarChart>
+            </ResponsiveContainer>
+            <p className="caption">Reported default run: mean 0.089, median 0.071, P90-P10 spread 0.068.</p>
+          </article>
+
+          <article className="panel-card">
+            <div className="section-title-row compact">
+              <div>
+                <h2>RDI Contribution Matrix</h2>
+                <p>Post-hoc nutrient contribution bands for selected top-ranked foods; values are percent daily value per 100 g.</p>
+              </div>
+              <span className="figure-label">Fig. 04</span>
+            </div>
+            <div className="heatmap" role="table" aria-label="RDI contribution matrix">
+              <div className="heatmap-row heatmap-head" role="row">
+                <span role="columnheader">Food</span>
+                {rdiNutrients.map((nutrient) => (
+                  <span role="columnheader" key={nutrient}>{nutrient}</span>
+                ))}
+              </div>
+              {rdiCoverage.map((row) => (
+                <div className="heatmap-row" role="row" key={row.food}>
+                  <span role="cell">{row.food}</span>
+                  {row.values.map((value, index) => (
+                    <span
+                      role="cell"
+                      className={value >= 80 ? "heat-cell high" : "heat-cell"}
+                      style={{ "--intensity": Math.min(1, value / 120).toString() } as CSSProperties}
+                      key={`${row.food}-${rdiNutrients[index]}`}
+                    >
+                      {value}
+                    </span>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </article>
+        </section>
+
         <section className="panel-card results-card" aria-labelledby="results-title">
           <div className="section-title-row compact">
             <div>
-              <h2 id="results-title">Searchable results</h2>
-              <p>Filtered ranking preview.</p>
+              <h2 id="results-title">Ranked Candidate Foods</h2>
+              <p>Filtered preview of eligible complete-case foods with retained nutrient descriptors.</p>
             </div>
+            <span className="record-count">{filteredFoods.length} records</span>
           </div>
           <div className="table-wrap">
             <table>
-              <thead><tr><th>Rank</th><th>Food</th><th>Category</th><th>Priority score</th><th>Key nutrients</th><th>Evidence level</th></tr></thead>
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>WAFCT ID</th>
+                  <th>Food description</th>
+                  <th>Category</th>
+                  <th>TOPSIS score</th>
+                  <th>Contributing nutrients</th>
+                  <th>RDI layer</th>
+                  <th>Signal level</th>
+                </tr>
+              </thead>
               <tbody>
                 {tableFoods.map((record: FoodRecord) => (
                   <tr key={record.id}>
-                    <td>{record.rank}</td><td>{record.food}</td><td>{record.category}</td><td>{scoreFormatter(record.finalScore)}</td><td>{record.keyNutrients.join(", ")}</td><td><span className={`status ${record.evidenceStrength.toLowerCase()}`}>{record.evidenceStrength}</span></td>
+                    <td>{record.rank}</td>
+                    <td>{record.id}</td>
+                    <td>{record.food}</td>
+                    <td>{record.category}</td>
+                    <td>{scoreFormatter(record.finalScore)}</td>
+                    <td>{record.keyNutrients.join(", ")}</td>
+                    <td>{record.rdiCheck}</td>
+                    <td>{record.evidenceStrength}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
-            {tableFoods.length === 0 && <div className="empty-state table-empty"><p>No foods match these filters. Try clearing the nutrient or category filter.</p><button type="button" onClick={resetFilters}>Reset filters</button></div>}
+            {tableFoods.length === 0 && (
+              <div className="empty-state table-empty">
+                <p>No foods match these filters.</p>
+                <button type="button" onClick={resetFilters}>Reset</button>
+              </div>
+            )}
           </div>
         </section>
       </section>
 
-      <section className="interpretation-section" aria-labelledby="interpretation-title">
-        <h2 id="interpretation-title">How to interpret this dashboard</h2>
-        <div className="interpretation-grid">
-          <article className="interpretation-card"><IconBook /><div><h3>Research evidence</h3><p>I referenced nutrition studies to see which nutrient gaps appear most often.</p></div></article>
-          <article className="interpretation-card"><IconBars /><div><h3>Nutrient weighting</h3><p>Nutrients mentioned more often in deficiency literature receive more weight.</p></div></article>
-          <article className="interpretation-card"><IconScale /><div><h3>Food ranking</h3><p>Foods are scored based on how well they provide the nutrients that matter most.</p></div></article>
-          <article className="interpretation-card"><IconUsers /><div><h3>Decision support</h3><p>These results can help identify local foods for further nutrition planning, but they are not direct dietary advice.</p></div></article>
-        </div>
+      <section className="method-section" aria-labelledby="assumptions-title">
+        <article>
+          <div className="section-heading">
+            <p className="eyebrow">Ranking assumptions</p>
+            <h2 id="assumptions-title">Methodological Traceability</h2>
+          </div>
+          <dl className="assumption-list">
+            {assumptions.map((item) => (
+              <div key={item.term}>
+                <dt>{item.term}</dt>
+                <dd>{item.detail}</dd>
+              </div>
+            ))}
+          </dl>
+        </article>
+        <article>
+          <div className="section-heading">
+            <p className="eyebrow">Limitations and future work</p>
+            <h2>Interpretive Boundaries</h2>
+          </div>
+          <ul className="limitation-list">
+            {limitations.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </article>
       </section>
     </main>
   );

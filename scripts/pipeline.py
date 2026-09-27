@@ -1,12 +1,14 @@
 import argparse
 import os
 import re
+import textwrap
 from pathlib import Path
 
 os.environ.setdefault("MPLBACKEND", "Agg")
 os.environ.setdefault("MPLCONFIGDIR", str(Path(__file__).resolve().parents[1] / "outputs" / ".matplotlib"))
 
 import matplotlib.pyplot as plt
+import matplotlib.colors as mcolors
 import numpy as np
 import pandas as pd
 
@@ -32,12 +34,15 @@ from config import (
 )
 
 PALETTE = {
-    "blue": "#2E86AB",
-    "green": "#6A994E",
-    "orange": "#F18F01",
-    "purple": "#A23B72",
+    "navy": "#061735",
+    "blue": "#2364AA",
+    "teal": "#66BEB5",
+    "gold": "#FEC601",
+    "orange": "#EA7317",
     "red": "#C73E1D",
-    "gray": "#4A4A4A",
+    "purple": "#7A5195",
+    "gray": "#596879",
+    "light_grid": "#E7EEF2",
 }
 
 
@@ -366,7 +371,101 @@ def run_topsis():
 
 def clean_label(value, max_len=54):
     value = str(value).replace("\n", " ")
+    value = value.replace("_", " ")
+    value = re.sub(r"\s+", " ", value).strip()
     return value if len(value) <= max_len else value[: max_len - 3] + "..."
+
+
+def nutrient_display_label(row_or_value, max_len=42):
+    """Use readable nutrient labels in figures while leaving source data intact."""
+    key_labels = {
+        "protein": "Protein",
+        "net_carbs": "Net carbs",
+        "fiber": "Fiber",
+        "calcium": "Calcium",
+        "iron": "Iron",
+        "magnesium": "Magnesium",
+        "phosphorus": "Phosphorus",
+        "potassium": "Potassium",
+        "sodium": "Sodium",
+        "zinc": "Zinc",
+        "copper": "Copper",
+        "vitamin_a": "Vitamin A",
+        "vitamin_c": "Vitamin C",
+        "vitamin_d": "Vitamin D",
+        "vitamin_b12": "Vitamin B12",
+        "vitamin_b6": "Vitamin B6",
+        "thiamine": "Thiamine",
+        "riboflavin": "Riboflavin",
+        "niacin": "Niacin",
+        "folate": "Folate",
+        "saturated_fat": "Saturated fat",
+        "monounsaturated_fat": "Monounsaturated fat",
+        "polyunsaturated_fat": "Polyunsaturated fat",
+        "linoleic_acid": "Linoleic acid",
+        "alpha_linolenic_acid": "Alpha-linolenic acid",
+    }
+    if isinstance(row_or_value, pd.Series) and row_or_value.get("nutrient_key") in key_labels:
+        return key_labels[row_or_value["nutrient_key"]]
+    reverse_lookup = {item["column"]: key_labels.get(item["key"], item["key"].replace("_", " ").title()) for item in NUTRIENTS}
+    label = reverse_lookup.get(str(row_or_value), clean_label(row_or_value, max_len=max_len))
+    return clean_label(label, max_len=max_len)
+
+
+def wrap_labels(labels, width=28):
+    return ["\n".join(textwrap.wrap(str(label), width=width, break_long_words=False)) for label in labels]
+
+
+def style_axis(ax, grid_axis="x"):
+    """Apply a restrained publication-style axis treatment."""
+    ax.set_facecolor("white")
+    ax.tick_params(axis="both", labelsize=9, colors=PALETTE["navy"])
+    ax.title.set_color(PALETTE["navy"])
+    ax.xaxis.label.set_color(PALETTE["navy"])
+    ax.yaxis.label.set_color(PALETTE["navy"])
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.spines["left"].set_color("#9AAAB5")
+    ax.spines["bottom"].set_color("#9AAAB5")
+    ax.grid(axis=grid_axis, color=PALETTE["light_grid"], linewidth=0.8)
+    ax.set_axisbelow(True)
+
+
+def values_to_colors(values, cmap_name, low_clip=None, high_clip=None):
+    values = pd.Series(values, dtype="float64")
+    vmin = values.min() if low_clip is None else low_clip
+    vmax = values.max() if high_clip is None else high_clip
+    norm = mcolors.Normalize(vmin=vmin, vmax=vmax)
+    cmap = plt.get_cmap(cmap_name) if isinstance(cmap_name, str) else cmap_name
+    return [cmap(norm(value)) for value in values], norm, cmap
+
+
+def truncated_colormap(cmap_name, min_value=0.18, max_value=0.95, steps=256):
+    """Avoid nearly white low-value colors that disappear for low-vision users."""
+    cmap = plt.get_cmap(cmap_name)
+    return mcolors.LinearSegmentedColormap.from_list(
+        f"{cmap_name}_{min_value:.2f}_{max_value:.2f}",
+        cmap(np.linspace(min_value, max_value, steps)),
+    )
+
+
+def blue_score_colormap():
+    """Colorblind-friendly score ramp with visible lows and dark high scores."""
+    return mcolors.LinearSegmentedColormap.from_list(
+        "accessible_blue_score",
+        ["#73BFB8", "#3DA5D9", "#2364AA", "#061735"],
+    )
+
+
+def color_luminance(rgba):
+    rgb = np.array(rgba[:3])
+    rgb = np.where(rgb <= 0.03928, rgb / 12.92, ((rgb + 0.055) / 1.055) ** 2.4)
+    return 0.2126 * rgb[0] + 0.7152 * rgb[1] + 0.0722 * rgb[2]
+
+
+def text_color_for_cell(value, cmap, norm):
+    """Choose black/white text using the rendered cell color, not a hard threshold."""
+    return "black" if color_luminance(cmap(norm(value))) > 0.42 else "white"
 
 
 def build_rdi_coverage(top_n=25):
@@ -406,48 +505,101 @@ def build_rdi_coverage(top_n=25):
 def generate_figures():
     """Create interpretation-ready figures and omit redundant old figures."""
     FIGURE_DIR.mkdir(parents=True, exist_ok=True)
+    plt.rcParams.update({
+        "figure.facecolor": "white",
+        "axes.facecolor": "white",
+        "axes.titlesize": 13,
+        "axes.titleweight": "bold",
+        "axes.labelsize": 10,
+        "font.size": 9,
+        "savefig.bbox": "tight",
+    })
     support = pd.read_csv(OUTPUT_FILES["support_counts"]).sort_values("supporting_abstract_count", ascending=True)
     supported = support[support["supporting_abstract_count"] > 0]
+    supported_labels = supported.apply(nutrient_display_label, axis=1)
 
     fig, ax = plt.subplots(figsize=(10, max(5, len(supported) * 0.32)))
-    bars = ax.barh([clean_label(v) for v in supported["nutrient_name"]], supported["supporting_abstract_count"], color=PALETTE["blue"])
+    support_cmap = truncated_colormap("YlOrBr", 0.28, 0.98)
+    support_colors, support_norm, support_cmap = values_to_colors(supported["supporting_abstract_count"], support_cmap)
+    bars = ax.barh(
+        supported_labels,
+        supported["supporting_abstract_count"],
+        color=support_colors,
+        edgecolor="white",
+        linewidth=0.7,
+    )
     ax.set_title("Figure 1. PubMed Abstract Support Counts by Nutrient")
     ax.set_xlabel("Supporting abstracts with nutrient and deficiency-context co-occurrence")
     ax.set_ylabel("Nutrient")
+    style_axis(ax)
     for bar in bars:
         width = bar.get_width()
-        ax.text(width + 1, bar.get_y() + bar.get_height() / 2, f"{int(width)}", va="center", fontsize=8)
-    ax.text(0.01, 0.01, "Interpretation: larger counts receive larger literature-derived weights after normalization.", transform=ax.transAxes, fontsize=9)
+        ax.text(width + max(supported["supporting_abstract_count"]) * 0.01, bar.get_y() + bar.get_height() / 2, f"{int(width)}", va="center", fontsize=8, color=PALETTE["navy"])
+    scalar = plt.cm.ScalarMappable(norm=support_norm, cmap=support_cmap)
+    scalar.set_array([])
+    cbar = fig.colorbar(scalar, ax=ax, pad=0.015, fraction=0.04)
+    cbar.set_label("Support count intensity")
+    ax.text(
+        0.01,
+        -0.12,
+        "Color encodes the number of supporting abstracts; darker bars indicate stronger literature signals.",
+        transform=ax.transAxes,
+        fontsize=8.5,
+        color=PALETTE["gray"],
+    )
     plt.tight_layout()
     plt.savefig(FIGURE_DIR / "figure-1-abstract-support-counts.png", dpi=150)
     plt.close()
 
     scores = pd.read_csv(OUTPUT_FILES["topsis"])
     fig, ax = plt.subplots(figsize=(8, 5))
-    ax.hist(scores["topsis_score"], bins=35, color=PALETTE["green"], edgecolor="black", alpha=0.85)
+    counts, bins, patches = ax.hist(scores["topsis_score"], bins=35, edgecolor="white", linewidth=0.7, alpha=0.95)
+    bin_centers = 0.5 * (bins[:-1] + bins[1:])
+    hist_cmap = blue_score_colormap()
+    hist_colors, hist_norm, hist_cmap = values_to_colors(bin_centers, hist_cmap)
+    for patch, color in zip(patches, hist_colors):
+        patch.set_facecolor(color)
     ax.set_title("TOPSIS Score Distribution Across Eligible Complete-Case Foods")
     ax.set_xlabel("TOPSIS score")
     ax.set_ylabel("Number of foods")
+    style_axis(ax)
     mean_score = scores["topsis_score"].mean()
     median_score = scores["topsis_score"].median()
     spread = scores["topsis_score"].quantile(0.9) - scores["topsis_score"].quantile(0.1)
     ax.axvline(mean_score, color=PALETTE["red"], linestyle="--", linewidth=1.5, label=f"Mean = {mean_score:.3f}")
     ax.axvline(median_score, color=PALETTE["purple"], linestyle=":", linewidth=1.8, label=f"Median = {median_score:.3f}")
-    ax.text(0.02, 0.95, f"Ranking spread: P90 - P10 = {spread:.3f}", transform=ax.transAxes, va="top")
-    ax.legend()
+    ax.text(0.02, 0.95, f"Ranking spread: P90 - P10 = {spread:.3f}", transform=ax.transAxes, va="top", color=PALETTE["navy"])
+    scalar = plt.cm.ScalarMappable(norm=hist_norm, cmap=hist_cmap)
+    scalar.set_array([])
+    cbar = fig.colorbar(scalar, ax=ax, pad=0.015, fraction=0.04)
+    cbar.set_label("TOPSIS score")
+    ax.legend(frameon=False)
     plt.tight_layout()
     plt.savefig(FIGURE_DIR / "topsis-score-distribution.png", dpi=150)
     plt.close()
 
     top = scores.head(20).sort_values("topsis_score", ascending=True)
     fig, ax = plt.subplots(figsize=(10, 7))
-    bars = ax.barh([clean_label(v) for v in top["Food name in English"]], top["topsis_score"], color=PALETTE["orange"])
+    top_cmap = blue_score_colormap()
+    top_colors, top_norm, top_cmap = values_to_colors(top["topsis_score"], top_cmap)
+    bars = ax.barh(
+        [clean_label(v) for v in top["Food name in English"]],
+        top["topsis_score"],
+        color=top_colors,
+        edgecolor="white",
+        linewidth=0.7,
+    )
     ax.set_title("Top 20 Eligible Complete-Case Foods by Literature-Weighted TOPSIS Score")
     ax.set_xlabel("TOPSIS score")
     ax.set_ylabel("Food")
+    style_axis(ax)
     for bar in bars:
         width = bar.get_width()
-        ax.text(width + 0.005, bar.get_y() + bar.get_height() / 2, f"{width:.3f}", va="center", fontsize=8)
+        ax.text(width + 0.005, bar.get_y() + bar.get_height() / 2, f"{width:.3f}", va="center", fontsize=8, color=PALETTE["navy"])
+    scalar = plt.cm.ScalarMappable(norm=top_norm, cmap=top_cmap)
+    scalar.set_array([])
+    cbar = fig.colorbar(scalar, ax=ax, pad=0.015, fraction=0.04)
+    cbar.set_label("TOPSIS score intensity")
     plt.tight_layout()
     plt.savefig(FIGURE_DIR / "top-20-foods-topsis-score.png", dpi=150)
     plt.close()

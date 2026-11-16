@@ -212,7 +212,7 @@ function App() {
     <main className="app-shell">
       <section className="hero-grid" aria-labelledby="dashboard-title">
         <div className="hero-copy">
-          <h1 id="dashboard-title">Text-Informed Nutritional Prioritization in West Africa</h1>
+          <h1 id="dashboard-title">Multi-Criteria Decision Analysis for Nutrition Prioritization in West Africa</h1>
           <p className="hero-statement">
             Literature-weighted TOPSIS ranking of eligible WAFCT foods using deficiency-related PubMed signals.
           </p>

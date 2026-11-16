@@ -1,4 +1,4 @@
-# West Africa Nutrition Prioritization Dashboard
+# Multi-Criteria Decision Analysis for Nutrition Prioritization in West Africa
 
 One-page React + TypeScript + Vite dashboard prototype for presenting the nutrition-ranking pipeline as an accessible decision-support work sample.
 

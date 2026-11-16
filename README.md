@@ -1,4 +1,4 @@
-# West Africa Nutrition Ranking Project
+# Multi-Criteria Decision Analysis for Nutrition Prioritization in West Africa
 
 This project targets a resource-constrained population health problem by ranking foods in West Africa. The goal is not to produce a generic nutrient-density score. The pipeline combines food composition data, PubMed-derived deficiency signals, and TOPSIS multi-criteria decision analysis so rankings reflect region-relevant nutrition priorities.
 
